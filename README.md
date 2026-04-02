@@ -205,6 +205,7 @@ In this section, you can find sites presenting news about BSD.
 
 ### Forums
 
+* [BSD Cafe Billboard](https://billboard.bsd.cafe/)
 * [BSDForen](https://www.bsdforen.de/)
 * [Daemon Forums](http://daemonforums.org/)
 * [UnitedBSD](https://www.unitedbsd.com/)
