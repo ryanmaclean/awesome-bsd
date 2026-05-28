@@ -1,0 +1,18 @@
+verbose = true
+no_progress = true
+cache = true
+max_cache_age = "1w"
+max_redirects = 5
+retry_wait_time = 2
+timeout = 20
+accept = [200, 206, 301, 302, 303, 429]
+exclude = [
+  "^mailto:",
+  # Live pages that block or time out automated link checkers.
+  "^https?://bsd-hardware\\.info/",
+  "^https?://daemonforums\\.org/",
+  "^https?://www\\.bsdstore\\.ru/",
+  "^https?://www\\.phoronix\\.com/",
+  "^https?://twitter\\.com/",
+  "^https?://sourceforge\\.net/",
+]

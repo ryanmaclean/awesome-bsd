@@ -1,0 +1,45 @@
+name: Suggest a link
+description: Suggest a BSD-related project, resource, event, or community link.
+title: "Add: "
+labels:
+  - link-suggestion
+body:
+  - type: input
+    id: url
+    attributes:
+      label: URL
+      description: Link to the project, resource, event, or community.
+      placeholder: https://example.org/
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: One or two sentences explaining what this is and why it belongs in the list.
+    validations:
+      required: true
+  - type: dropdown
+    id: section
+    attributes:
+      label: Suggested section
+      options:
+        - Operating Systems
+        - BSD News
+        - Forums and Communities
+        - Learning
+        - Books
+        - BSD related software
+        - Gaming
+        - Other
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: The link is reachable.
+          required: true
+        - label: The resource is BSD-related.
+          required: true
