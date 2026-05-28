@@ -1,0 +1,139 @@
+{
+  "schema_version": 1,
+  "purpose": "Canonical and high-value BSD resources for agents and tooling.",
+  "status_values": [
+    "active",
+    "niche",
+    "research",
+    "historical",
+    "unknown"
+  ],
+  "resources": [
+    {
+      "id": "freebsd",
+      "name": "FreeBSD",
+      "category": "operating-system",
+      "status": "active",
+      "url": "https://www.freebsd.org",
+      "best_for": "General-purpose servers, workstations, jails, bhyve, ZFS, and a large ports/packages ecosystem.",
+      "canonical_docs": [
+        "https://docs.freebsd.org/en/books/handbook/",
+        "https://man.freebsd.org/"
+      ]
+    },
+    {
+      "id": "openbsd",
+      "name": "OpenBSD",
+      "category": "operating-system",
+      "status": "active",
+      "url": "https://www.openbsd.org",
+      "best_for": "Security-focused defaults, compact base system, PF, networking, and excellent manual pages.",
+      "canonical_docs": [
+        "https://www.openbsd.org/faq/",
+        "https://man.openbsd.org/"
+      ]
+    },
+    {
+      "id": "netbsd",
+      "name": "NetBSD",
+      "category": "operating-system",
+      "status": "active",
+      "url": "https://netbsd.org",
+      "best_for": "Portability, pkgsrc, older or unusual hardware, and a clean traditional Unix environment.",
+      "canonical_docs": [
+        "https://netbsd.org/docs/guide/en/",
+        "https://man.netbsd.org/"
+      ]
+    },
+    {
+      "id": "dragonfly-bsd",
+      "name": "DragonFly BSD",
+      "category": "operating-system",
+      "status": "active",
+      "url": "https://www.dragonflybsd.org",
+      "best_for": "HAMMER2, DragonFly kernel work, and smaller-project BSD exploration.",
+      "canonical_docs": [
+        "https://www.dragonflybsd.org/docs/newhandbook/",
+        "https://www.dragonflybsd.org/hammer/"
+      ]
+    },
+    {
+      "id": "ghostbsd",
+      "name": "GhostBSD",
+      "category": "operating-system",
+      "status": "active",
+      "url": "https://www.ghostbsd.org/",
+      "best_for": "Desktop-oriented FreeBSD-derived systems.",
+      "canonical_docs": [
+        "https://www.ghostbsd.org/download"
+      ]
+    },
+    {
+      "id": "nomadbsd",
+      "name": "NomadBSD",
+      "category": "operating-system",
+      "status": "active",
+      "url": "https://nomadbsd.org/",
+      "best_for": "Live USB desktop and rescue workflows based on FreeBSD.",
+      "canonical_docs": [
+        "https://nomadbsd.org/download.html"
+      ]
+    },
+    {
+      "id": "opnsense",
+      "name": "OPNsense",
+      "category": "firewall-router",
+      "status": "active",
+      "url": "https://opnsense.org",
+      "best_for": "Web-managed firewall and router appliances.",
+      "canonical_docs": [
+        "https://opnsense.org/download/",
+        "https://forum.opnsense.org/"
+      ]
+    },
+    {
+      "id": "pfsense",
+      "name": "pfSense",
+      "category": "firewall-router",
+      "status": "active",
+      "url": "https://www.pfsense.org/",
+      "best_for": "Web-managed firewall and router appliances.",
+      "canonical_docs": [
+        "https://www.pfsense.org/download/",
+        "https://forum.pfsense.org/"
+      ]
+    },
+    {
+      "id": "freshports",
+      "name": "FreshPorts",
+      "category": "ports-packages",
+      "status": "active",
+      "url": "https://www.freshports.org/",
+      "best_for": "Browsing FreeBSD ports, commits, dependencies, and package metadata."
+    },
+    {
+      "id": "pkgsrc",
+      "name": "pkgsrc",
+      "category": "ports-packages",
+      "status": "active",
+      "url": "https://www.pkgsrc.org/",
+      "best_for": "Cross-platform package management from NetBSD."
+    },
+    {
+      "id": "openzfs",
+      "name": "OpenZFS",
+      "category": "storage-filesystem",
+      "status": "active",
+      "url": "https://openzfs.org/",
+      "best_for": "Open-source storage platform used by FreeBSD and other operating systems."
+    },
+    {
+      "id": "hammer2",
+      "name": "HAMMER2",
+      "category": "storage-filesystem",
+      "status": "active",
+      "url": "https://www.dragonflybsd.org/hammer/",
+      "best_for": "DragonFly BSD's default copy-on-write filesystem."
+    }
+  ]
+}

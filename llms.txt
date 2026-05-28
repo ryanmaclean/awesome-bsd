@@ -1,0 +1,35 @@
+# Awesome BSD
+
+> A curated entry point for BSD operating systems, communities, documentation, and ecosystem software.
+
+## Primary Files
+
+* `README.md` - human-readable curated BSD map.
+* `data/starter-paths.json` - machine-readable newcomer pathways.
+* `data/resource-index.json` - machine-readable index of canonical/high-value resources.
+* `CONTRIBUTING.md` - contribution and quality expectations.
+* `AGENTS.md` - repo-local instructions for AI agents.
+
+## Newcomer Pathways
+
+* General-purpose server/workstation BSD: start with FreeBSD and the FreeBSD Handbook.
+* Security-focused compact base system: start with OpenBSD and the OpenBSD FAQ.
+* Portability and unusual hardware: start with NetBSD and the NetBSD Guide.
+* Distinct kernel/filesystem work: start with DragonFly BSD and the DragonFly BSD Handbook.
+* Desktop-oriented FreeBSD derivatives: start with GhostBSD or NomadBSD.
+* Firewall/router appliances: start with OPNsense, pfSense, or BSD Router Project.
+
+## Curation Rules
+
+* Canonical sources first: official docs, manpages, foundations, project pages, source repositories.
+* Avoid unlabeled stale or historical entries in newcomer paths.
+* Prefer factual one-sentence descriptions over marketing copy.
+* Every added URL should be reachable and useful without login.
+* Keep `README.md`, `data/starter-paths.json`, and `data/resource-index.json` consistent.
+
+## Validation
+
+* `git diff --check`
+* JSON parse of files under `data/`
+* Markdown whitespace check in `.github/workflows/docs-quality.yml`
+* Lychee link audit configured by `lychee.toml`

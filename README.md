@@ -16,6 +16,8 @@ Structure is as follows:
 
 Please see [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines.
 
+For AI agents and post-AI tooling, see [AGENTS.md](AGENTS.md), [llms.txt](llms.txt), and the machine-readable files in [data](data).
+
 ## Start here
 
 BSD is a family of Unix-like operating systems descended from the Berkeley Software Distribution. If you are new to BSD, start with official documentation first:

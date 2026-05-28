@@ -1,0 +1,154 @@
+{
+  "schema_version": 1,
+  "purpose": "Machine-readable newcomer pathways for BSD exploration.",
+  "paths": [
+    {
+      "id": "general-purpose",
+      "label": "General-purpose server or workstation",
+      "start_with": "FreeBSD",
+      "best_for": [
+        "servers",
+        "workstations",
+        "jails",
+        "bhyve",
+        "ZFS",
+        "large ports and packages ecosystem"
+      ],
+      "primary_resources": [
+        {
+          "label": "FreeBSD Handbook",
+          "url": "https://docs.freebsd.org/en/books/handbook/"
+        },
+        {
+          "label": "FreeBSD Manual Pages",
+          "url": "https://man.freebsd.org/"
+        },
+        {
+          "label": "FreshPorts",
+          "url": "https://www.freshports.org/"
+        }
+      ]
+    },
+    {
+      "id": "security-network-services",
+      "label": "Security-focused base system and network services",
+      "start_with": "OpenBSD",
+      "best_for": [
+        "compact base system",
+        "security-focused defaults",
+        "PF",
+        "network services",
+        "excellent manual pages"
+      ],
+      "primary_resources": [
+        {
+          "label": "OpenBSD FAQ",
+          "url": "https://www.openbsd.org/faq/"
+        },
+        {
+          "label": "OpenBSD Manual Pages",
+          "url": "https://man.openbsd.org/"
+        },
+        {
+          "label": "OpenBSD Journal",
+          "url": "https://undeadly.org/"
+        }
+      ]
+    },
+    {
+      "id": "portability",
+      "label": "Portability and unusual hardware",
+      "start_with": "NetBSD",
+      "best_for": [
+        "hardware portability",
+        "pkgsrc",
+        "traditional Unix environment",
+        "older or unusual systems"
+      ],
+      "primary_resources": [
+        {
+          "label": "NetBSD Guide",
+          "url": "https://netbsd.org/docs/guide/en/"
+        },
+        {
+          "label": "NetBSD Manual Pages",
+          "url": "https://man.netbsd.org/"
+        },
+        {
+          "label": "pkgsrc",
+          "url": "https://www.pkgsrc.org/"
+        }
+      ]
+    },
+    {
+      "id": "filesystem-research",
+      "label": "DragonFly BSD and HAMMER2",
+      "start_with": "DragonFly BSD",
+      "best_for": [
+        "HAMMER2",
+        "kernel design",
+        "BSD systems research",
+        "smaller project exploration"
+      ],
+      "primary_resources": [
+        {
+          "label": "DragonFly BSD Handbook",
+          "url": "https://www.dragonflybsd.org/docs/newhandbook/"
+        },
+        {
+          "label": "HAMMER2",
+          "url": "https://www.dragonflybsd.org/hammer/"
+        },
+        {
+          "label": "DragonFly BSD Digest",
+          "url": "https://www.dragonflydigest.com/"
+        }
+      ]
+    },
+    {
+      "id": "desktop",
+      "label": "Desktop-oriented BSD",
+      "start_with": "GhostBSD or NomadBSD",
+      "best_for": [
+        "desktop setup",
+        "live USB",
+        "FreeBSD-based graphical environments"
+      ],
+      "primary_resources": [
+        {
+          "label": "GhostBSD",
+          "url": "https://www.ghostbsd.org/"
+        },
+        {
+          "label": "NomadBSD",
+          "url": "https://nomadbsd.org/"
+        }
+      ]
+    },
+    {
+      "id": "firewall-router",
+      "label": "Firewall or router appliance",
+      "start_with": "OPNsense, pfSense, or BSD Router Project",
+      "best_for": [
+        "firewalls",
+        "routing",
+        "network appliances",
+        "web-managed administration"
+      ],
+      "primary_resources": [
+        {
+          "label": "OPNsense",
+          "url": "https://opnsense.org"
+        },
+        {
+          "label": "pfSense",
+          "url": "https://www.pfsense.org/"
+        },
+        {
+          "label": "BSD Router Project",
+          "url": "https://bsdrp.net/"
+        }
+      ]
+    }
+  ]
+}
