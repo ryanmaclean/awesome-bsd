@@ -1,7 +1,13 @@
 verbose = true
 no_progress = true
+cache = true
+max_cache_age = "1w"
 max_redirects = 5
 retry_wait_time = 2
 timeout = 20
 accept = [200, 206, 301, 302, 303, 429]
-exclude = ["^mailto:"]
+exclude = [
+  "^mailto:",
+  "^https?://twitter\\.com/",
+  "^https?://sourceforge\\.net/",
+]
