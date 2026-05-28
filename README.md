@@ -1,9 +1,10 @@
 # Awesome BSD [![Awesome](https://awesome.re/badge.svg)](https://github.com/sindresorhus/awesome)
 
-This document is a database of links related to the BSD operating systems and BSD software license.
+This document is a curated entry point for BSD operating systems, communities, documentation, and ecosystem software.
 
 Structure is as follows:
 
+* [Start here](#start-here) – a short path for newcomers
 * [Operating systems](#operating-systems) – official and other links
 * [BSD news](#bsd-news) – where to look for news
 * [Forums and communities](#forums-and-communities) – forums, meetups etc
@@ -14,6 +15,24 @@ Structure is as follows:
 * [Other](#other)
 
 Please see [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines.
+
+## Start here
+
+BSD is a family of Unix-like operating systems descended from the Berkeley Software Distribution. If you are new to BSD, start with official documentation first:
+
+* [FreeBSD Handbook](https://docs.freebsd.org/en/books/handbook/) – best general-purpose starting point for servers, workstations, jails, networking, storage, and desktop setup.
+* [OpenBSD FAQ](https://www.openbsd.org/faq/) – best starting point for OpenBSD installation, system management, networking, PF, and project practices.
+* [NetBSD Guide](https://netbsd.org/docs/guide/en/) – best starting point for NetBSD installation, administration, portability, and pkgsrc.
+* [DragonFly BSD Handbook](https://www.dragonflybsd.org/docs/newhandbook/) – best starting point for DragonFly BSD and HAMMER2.
+
+Quick orientation:
+
+* Start with [FreeBSD](#freebsd) if you want broad documentation, a large ports/packages ecosystem, jails, bhyve, ZFS, or a practical server/workstation BSD.
+* Start with [OpenBSD](#openbsd) if you want a compact base system, strong documentation, security-focused defaults, PF, or network services.
+* Start with [NetBSD](#netbsd) if you care about portability, older or unusual hardware, pkgsrc, or a clean traditional Unix environment.
+* Start with [DragonFly BSD](#dragonfly-bsd) if you want to explore HAMMER2, DragonFly's kernel work, or a smaller BSD with a distinct technical direction.
+* Look at [GhostBSD](#ghostbsd) or [NomadBSD](#nomadbsd) if you specifically want a desktop-oriented FreeBSD derivative.
+* Look at [OPNsense](#opnsense), [pfSense](#pfsense), or [BSD Router Project](#bsd-router-project) if you want a firewall or router appliance.
 
 ## Operating systems
 In this section, you can find official BSD OSes links (in alphabetical order) with short descriptions as can be found on their pages.
@@ -35,10 +54,10 @@ BSD Router Project (BSDRP) is an embedded free and open-source router distributi
 ### DragonFly BSD
 DragonFly belongs to the same class of operating systems as other BSD-derived systems and Linux. It is based on the same UNIX ideals and APIs and shares ancestor code with other BSD operating systems. DragonFly provides an opportunity for the BSD base to grow in an entirely different direction from the one taken in the FreeBSD, NetBSD, and OpenBSD series.
 
-* [official site](http://www.dragonflybsd.org)
-* [download](http://www.dragonflybsd.org/download/)
-* [mailing list](http://www.dragonflybsd.org/mailinglists/)
-* [handbook](http://www.dragonflybsd.org/docs/newhandbook/)
+* [official site](https://www.dragonflybsd.org)
+* [download](https://www.dragonflybsd.org/download/)
+* [mailing list](https://www.dragonflybsd.org/mailinglists/)
+* [handbook](https://www.dragonflybsd.org/docs/newhandbook/)
 * [/r/dragonflybsd](https://www.reddit.com/r/dragonflybsd)
 * [DragonFly BSD Digest](https://www.dragonflydigest.com/) – a running description of activity related to DragonFly BSD.
 
@@ -155,14 +174,14 @@ pfSense® software is a free, open-source customized distribution of FreeBSD spe
 ### RetroBSD
 RetroBSD is a port of 2.11BSD Unix intended for embedded systems with fixed memory mapping. The current target is Microchip PIC32 microcontroller with 128 kbytes of RAM and 512 kbytes of Flash. PIC32 processor has MIPS M4K architecture, executable data memory, and flexible RAM partitioning between user and kernel modes.
 
-* [official site](http://retrobsd.org/)
-* [download](http://retrobsd.org/wiki/autobuild.php)
+* [official site](https://retrobsd.org/)
+* [download](https://retrobsd.org/wiki/autobuild.php)
 
 ### SmallWall
 A long time ago, a very smart guy asked a very simple question. "Why do firewalls have to be big, slow, and hard to configure?" And he created m0n0wall. At this, it was amazingly successful. So successful that the FreeBSD-based core was used as a basis for several other projects such as pfSense, Askozia, FreeNAS, and nas4free. Recently, a grandchild of m0n0wall was spawned from pfSense, OPNsense. But, m0n0wall has retired now, and some of us still feel the need for a small and lean firewall. SmallWall is that firewall.
 
-* [official site](http://www.smallwall.org/)
-* [downloads](http://www.smallwall.org/download.html)
+* [official site](https://www.smallwall.org/)
+* [downloads](https://www.smallwall.org/download.html)
 * [forums](https://smallwall.freeforums.net/)
 
 ### t1n1wall
@@ -189,7 +208,6 @@ In this section, you can find sites presenting news about BSD.
 * [BSD Weekly](https://bsdweekly.com/) – a free, once–weekly e-mail round-up of BSD news and articles.
 * [DiscoverBSD.com](https://www.discoverbsd.com/) – discovering the Way of the BSD
 * [Klara Systems Articles](https://klarasystems.com/articles/) – technical articles on FreeBSD, OpenZFS, and infrastructure topics
-* [Phoronix](https://www.phoronix.com/scan.php?page=news_topic&q=BSD)
 * [Slashdot](https://bsd.slashdot.org/) – BSD section of the popular Slashdot open-source news and forum site.
 
 ### Podcasts
@@ -203,7 +221,6 @@ In this section, you can find sites presenting news about BSD.
 
 ### Community initiatives
 
-* [BSD Hardware](https://bsd-hardware.info/) – a project to collect hardware details of BSD-powered computers and help users and developers debug hardware-related issues, check for compatibility and find drivers
 * [dmesgd](https://dmesgd.nycbug.org/) – a user-submitted repository of searchable \*BSD dmesgs, maintained by NYC\*BUG
 * [FreeBSD Foundation](https://freebsdfoundation.org/) – non-profit organization supporting FreeBSD development, advocacy, and education
 * [NetBSD Foundation](https://www.netbsd.org/foundation/) – legal entity supporting NetBSD infrastructure, donations, and project governance
@@ -213,7 +230,6 @@ In this section, you can find sites presenting news about BSD.
 
 * [BSD Cafe Billboard](https://billboard.bsd.cafe/)
 * [BSDForen](https://www.bsdforen.de/)
-* [Daemon Forums](http://daemonforums.org/)
 * [UnitedBSD](https://www.unitedbsd.com/)
 * [UNIX/BSD – Unix Linux Community](https://community.unix.com/c/unix/bsd/34)
 
@@ -248,7 +264,7 @@ In this section, you can find sites presenting news about BSD.
 
 ## Learning
 
-* [TeachBSD](http://teachbsd.org/) – Teaching Operating Systems with Tracing: a set of courses for students and software practitioners.
+* [TeachBSD](https://teachbsd.org/) – Teaching Operating Systems with Tracing: a set of courses for students and software practitioners.
 * [FreeBSD Documentation Portal](https://docs.freebsd.org/) – central documentation hub for FreeBSD handbooks, articles, and manuals
 * [FreeBSD Manual Pages](https://man.freebsd.org/) – searchable FreeBSD manual pages
 * [OpenBSD FAQ](https://www.openbsd.org/faq/index.html) – canonical OpenBSD guide covering installation, configuration, and daily administration
@@ -271,7 +287,7 @@ In this section, you can find sites presenting news about BSD.
 ## BSD related software
 
 * [Bastille](https://bastillebsd.org/) – Bastille helps you quickly create and manage FreeBSD Jails
-* [CBSD](https://www.bsdstore.ru/en/about.html) – CBSD is a management layer written for the FreeBSD jail(8) subsystem, bhyve and Xen
+* [CBSD](https://cbsd.io/) – CBSD is a management layer written for the FreeBSD jail(8) subsystem, bhyve and Xen
 * [BSD-Cloud-Image](https://bsd-cloud-image.org/) – a collection of (unofficial) prebuilt BSD cloud images, for instance for OpenStack
 * [FreshPorts](https://www.freshports.org/) – searchable index of FreeBSD ports, commits, dependencies, and package metadata
 * [HAMMER2](https://www.dragonflybsd.org/hammer/) – DragonFly BSD's default copy-on-write filesystem, with snapshots, compression, deduplication, and checksumming
