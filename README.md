@@ -1,9 +1,9 @@
-# Awesome BSD [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
+# Awesome BSD [![Awesome](https://awesome.re/badge.svg)](https://github.com/sindresorhus/awesome)
 
 This document is a database of links related to the BSD operating systems and BSD software license.
 
 [Structure](https://github.com/DiscoverBSD/BSD-Links/issues/1) is as follows:
- 
+
 * [Operating systems](#operating-systems) – official and other links
 * [BSD news](#bsd-news) – where to look for news
 * [Forums and communities](#forums-and-communities) – forums, meetups etc
@@ -13,8 +13,10 @@ This document is a database of links related to the BSD operating systems and BS
 * [Gaming](#gaming)
 * [Other](#other)
 
+Please see [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines.
+
 ## Operating systems
-In this section, you can find official BSD OSes links (in alphabetical order) with short descriptions as can be found on their pages. 
+In this section, you can find official BSD OSes links (in alphabetical order) with short descriptions as can be found on their pages.
 
 ### BSD Router Project
 BSD Router Project (BSDRP) is an embedded free and open-source router distribution based on [FreeBSD](https://www.freebsd.org/) with [Quagga](https://www.quagga.net/) and [BIRD](https://bird.network.cz/).
@@ -24,14 +26,14 @@ BSD Router Project (BSDRP) is an embedded free and open-source router distributi
 * [mailing list](https://bsdrp.net/community/mailing_lists)
 
 ### CheriBSD
-[CHERI (Capability Hardware Enhanced RISC Instructions)](https://www.cl.cam.ac.uk/research/security/ctsrd/cheri/) is a joint research project of SRI International and the University of Cambridge to revisit fundamental design choices in hardware and software to improve system security dramatically. CheriBSD is an adaptation of the open-source FreeBSD operating system to support the CHERI-MIPS, CHERI-RISC-V, and Arm Morello ISAs. 
+[CHERI (Capability Hardware Enhanced RISC Instructions)](https://www.cl.cam.ac.uk/research/security/ctsrd/cheri/) is a joint research project of SRI International and the University of Cambridge to revisit fundamental design choices in hardware and software to improve system security dramatically. CheriBSD is an adaptation of the open-source FreeBSD operating system to support the CHERI-MIPS, CHERI-RISC-V, and Arm Morello ISAs.
 
 * [official site](https://www.cl.cam.ac.uk/research/security/ctsrd/cheri/cheribsd.html)
 * [download](https://cheri-dist.cl.cam.ac.uk/)
 * [CTSRD-CHERI/cheribsd](https://github.com/CTSRD-CHERI/cheribsd)
 
 ### DragonFly BSD
-DragonFly belongs to the same class of operating systems as other BSD-derived systems and Linux. It is based on the same UNIX ideals and APIs and shares ancestor code with other BSD operating systems. DragonFly provides an opportunity for the BSD base to grow in an entirely different direction from the one taken in the FreeBSD, NetBSD, and OpenBSD series. 
+DragonFly belongs to the same class of operating systems as other BSD-derived systems and Linux. It is based on the same UNIX ideals and APIs and shares ancestor code with other BSD operating systems. DragonFly provides an opportunity for the BSD base to grow in an entirely different direction from the one taken in the FreeBSD, NetBSD, and OpenBSD series.
 
 * [official site](http://www.dragonflybsd.org)
 * [download](http://www.dragonflybsd.org/download/)
@@ -49,16 +51,15 @@ Founded in 1993, FreeBSD is an advanced operating system that powers modern [des
 * [handbook](https://docs.freebsd.org/en/books/handbook/)
 * [mailing list](https://www.freebsd.org/community/mailinglists/)
 * [FreshPorts](https://www.freshports.org/)
-* [/r/freebsd](https://www.reddit.com/r/freebsd) 
+* [/r/freebsd](https://www.reddit.com/r/freebsd)
 * [X](https://x.com/freebsd)
 
 ### GhostBSD
-GhostBSD is a user-friendly BSD operating system built on top of [FreeBSD](#freebsd). GhostBSD aims to provide a familiar workstation with all of the features and benefits of FreeBSD, combined with a twist that is the MATE desktop environment and a focus on user-friendliness. Available in both 32- and 64-bit versions, GhostBSD is suitable for newcomers, as well as experienced BSD users.
+GhostBSD is a user-friendly, desktop-oriented operating system based on [FreeBSD](#freebsd). GhostBSD aims to provide a familiar workstation with the benefits of FreeBSD, combined with the MATE desktop environment and a focus on user-friendliness.
 
 * [official site](https://www.ghostbsd.org/)
 * [download](https://www.ghostbsd.org/download)
 * [forums](https://forums.ghostbsd.org/)
-* [handbook](https://wiki.ghostbsd.org/index.php/GhostBSD_User_Handbook)
 
 ### HardenedBSD
 HardenedBSD is a security-enhanced fork of FreeBSD. The HardenedBSD Project is implementing many exploit mitigation and security technologies on top of FreeBSD.
@@ -70,7 +71,7 @@ HardenedBSD is a security-enhanced fork of FreeBSD. The HardenedBSD Project is i
 * [/r/hardenedbsd](https://www.reddit.com/r/hardenedbsd)
 
 ### helloSystem
-helloSystem is a desktop system for creators focusing on simplicity, elegance, and usability. Its design follows the “Less, but better” philosophy. It is intended as a system for “mere mortals”, welcoming to switchers from the Mac. [FreeBSD](#freebsd) is the core operating system. 
+helloSystem is a desktop system for creators focusing on simplicity, elegance, and usability. Its design follows the “Less, but better” philosophy. It is intended as a system for “mere mortals”, welcoming to switchers from the Mac. [FreeBSD](#freebsd) is the core operating system.
 
 * [official site](https://hellosystem.github.io/)
 * [download](https://github.com/helloSystem/ISO/releases)
@@ -106,7 +107,7 @@ NomadBSD is a 64-bit live system for USB flash drives, based on FreeBSD. Togethe
  * [mailing list](https://www.freelists.org/list/nomadbsddevs)
 
 ### NetBSD
-NetBSD is a free, fast, secure, and highly portable Unix-like Open Source operating system. It is available for a wide range of platforms, from large-scale servers and powerful desktop systems to handheld and embedded devices. Its clean design and advanced features make it excellent for use in both production and research environments, and the source code is freely available under a business-friendly license. NetBSD is developed and supported by a large and vivid international community. Many applications are readily available through pkgsrc, the NetBSD Packages Collection. 
+NetBSD is a free, fast, secure, and highly portable Unix-like Open Source operating system. It is available for a wide range of platforms, from large-scale servers and powerful desktop systems to handheld and embedded devices. Its clean design and advanced features make it excellent for use in both production and research environments, and the source code is freely available under a business-friendly license. NetBSD is developed and supported by a large and vivid international community. Many applications are readily available through pkgsrc, the NetBSD Packages Collection.
 
 * [official site](https://netbsd.org)
 * [download](https://netbsd.org/releases/)
@@ -116,7 +117,7 @@ NetBSD is a free, fast, secure, and highly portable Unix-like Open Source operat
 * [NetBSD Planet](https://netbsd.fi/)
 
 ### OpenBSD
-The OpenBSD project produces a FREE, multi-platform 4.4BSD-based UNIX-like operating system. Our efforts emphasize portability, standardization, correctness, [proactive security](https://www.openbsd.org/security.html) and [integrated cryptography](https://www.openbsd.org/crypto.html). As an example of the effect OpenBSD has, the popular [OpenSSH](https://www.openssh.com/) software comes from OpenBSD. 
+The OpenBSD project produces a FREE, multi-platform 4.4BSD-based UNIX-like operating system. Our efforts emphasize portability, standardization, correctness, [proactive security](https://www.openbsd.org/security.html) and [integrated cryptography](https://www.openbsd.org/crypto.html). As an example of the effect OpenBSD has, the popular [OpenSSH](https://www.openssh.com/) software comes from OpenBSD.
 
 * [official site](https://www.openbsd.org)
 * [download](https://www.openbsd.org/ftp.html)
@@ -129,7 +130,7 @@ The OpenBSD project produces a FREE, multi-platform 4.4BSD-based UNIX-like opera
 * [OpenBSD Journal](https://undeadly.org/) – a resource for the OpenBSD community
 
 ### OPNsense
-OPNsense is an open source,easy-to-use and easy-to-build FreeBSD based firewall and routing platform. OPNsense includes most of the features available in expensive commercial firewalls, and more in many cases. OPNsense® is a fork of pfSense® that in its turn has been forked from m0n0wall®.
+OPNsense is an open source, easy-to-use and easy-to-build FreeBSD based firewall and routing platform. OPNsense includes most of the features available in expensive commercial firewalls, and more in many cases. OPNsense® is a fork of pfSense® that in its turn has been forked from m0n0wall®.
 
 * [official site](https://opnsense.org)
 * [download](https://opnsense.org/download/)
@@ -144,7 +145,7 @@ OS108 is a fast, open, and Secure replacement Operating System for Windows and m
 * [official site](https://os108.org/)
 
 ### pfSense
-pfSense® software is a free, open-source customized distribution of FreeBSD specifically tailored for use as a firewall and router that is entirely managed via a web interface. In addition to being a powerful, flexible firewalling and routing platform, it includes a long list of related features and a package system allowing further expandability without adding bloat and potential security vulnerabilities to the base distribution. 
+pfSense® software is a free, open-source customized distribution of FreeBSD specifically tailored for use as a firewall and router that is entirely managed via a web interface. In addition to being a powerful, flexible firewalling and routing platform, it includes a long list of related features and a package system allowing further expandability without adding bloat and potential security vulnerabilities to the base distribution.
 
 * [official site](https://www.pfsense.org/)
 * [download](https://www.pfsense.org/download/)
@@ -158,7 +159,7 @@ RetroBSD is a port of 2.11BSD Unix intended for embedded systems with fixed memo
 * [download](http://retrobsd.org/wiki/autobuild.php)
 
 ### SmallWall
-A long time ago, a very smart guy asked a very simple question. "Why do firewalls have to be big, slow, and hard to configure?" And he created m0n0wall. At this, it was amazingly successful. So successful that the FreeBSD-based core was used as a basis for several other projects such as pfSense, Askozia, FreeNAS, and nas4free. Recently, a grandchild of m0n0wall was spawned from pfSense, OPNSense. But, m0n0wall has retired now, and some of us still feel the need for a small and lean firewall. SmallWall is that firewall. 
+A long time ago, a very smart guy asked a very simple question. "Why do firewalls have to be big, slow, and hard to configure?" And he created m0n0wall. At this, it was amazingly successful. So successful that the FreeBSD-based core was used as a basis for several other projects such as pfSense, Askozia, FreeNAS, and nas4free. Recently, a grandchild of m0n0wall was spawned from pfSense, OPNsense. But, m0n0wall has retired now, and some of us still feel the need for a small and lean firewall. SmallWall is that firewall.
 
 * [official site](http://www.smallwall.org/)
 * [downloads](http://www.smallwall.org/download.html)
@@ -179,21 +180,23 @@ ZRouter.org is a FreeBSD-based firmware for embedded devices.
 
 ## BSD news
 
-In this section, you can find sites presenting news about BSD. 
+In this section, you can find sites presenting news about BSD.
 
 ### News sites
 
 * [#BSDHistory](https://bsdhistory.discoverbsd.com/) – tweet-sized facts about BSDs
-* [BSDSec.net](https://bsdsec.net/) – dead simple BSD Security Advisories and Announcements 
+* [BSDSec.net](https://bsdsec.net/) – dead simple BSD Security Advisories and Announcements
 * [BSD Weekly](https://bsdweekly.com/) – a free, once–weekly e-mail round-up of BSD news and articles.
 * [DiscoverBSD.com](https://www.discoverbsd.com/) – discovering the Way of the BSD
-* [Phoronix](https://www.phoronix.com/scan.php?page=news_topic&q=BSD) 
+* [Klara Systems Articles](https://klarasystems.com/articles/) – technical articles on FreeBSD, OpenZFS, and infrastructure topics
+* [Phoronix](https://www.phoronix.com/scan.php?page=news_topic&q=BSD)
 * [Slashdot](https://bsd.slashdot.org/) – BSD section of the popular Slashdot open-source news and forum site.
 
-### Podcasts 
+### Podcasts
 
 * [BSDNow](https://www.bsdnow.tv/) – weekly BSD podcast, featuring news, interviews, and tutorials, in MP3, OGG, and MP4
 * [BSDTalk](https://bsdtalk.blogspot.com/) – talking about the BSD family of free operating systems
+* [2.5 Admins](https://2.5admins.com/) – systems administration podcast with regular BSD and storage coverage
 * [Garbage (archive)](https://garbage.jcs.org/) – a podcast about technology, much of it garbage (archived episodes).
 
 ## Forums and communities
@@ -202,6 +205,9 @@ In this section, you can find sites presenting news about BSD.
 
 * [BSD Hardware](https://bsd-hardware.info/) – a project to collect hardware details of BSD-powered computers and help users and developers debug hardware-related issues, check for compatibility and find drivers
 * [dmesgd](https://dmesgd.nycbug.org/) – a user-submitted repository of searchable \*BSD dmesgs, maintained by NYC\*BUG
+* [FreeBSD Foundation](https://freebsdfoundation.org/) – non-profit organization supporting FreeBSD development, advocacy, and education
+* [NetBSD Foundation](https://www.netbsd.org/foundation/) – legal entity supporting NetBSD infrastructure, donations, and project governance
+* [OpenBSD Foundation](https://www.openbsdfoundation.org/) – Canadian not-for-profit corporation supporting OpenBSD and related projects
 
 ### Forums
 
@@ -224,7 +230,7 @@ In this section, you can find sites presenting news about BSD.
 ### Fediverse
 
 * [BSD Cafe](https://bsd.cafe)
-* [BSD Network](https://bsd.network)
+* [BSD Network](https://bsd.network/about)
 * [c/bsd](https://lemmy.ml/c/bsd)
 * [c/freebsd](https://lemmy.ml/c/freebsd)
 
@@ -244,7 +250,13 @@ In this section, you can find sites presenting news about BSD.
 ## Learning
 
 * [The BSD Certification Group](http://www.bsdcertification.org/) – a non-profit organization committed to creating and maintaining a global certification standard for system administration on BSD-based operating systems.
-* [TeachBSD](http://teachbsd.org/) – Teaching Operating Systems with Tracing: a set of courses for students and software practitioners. 
+* [TeachBSD](http://teachbsd.org/) – Teaching Operating Systems with Tracing: a set of courses for students and software practitioners.
+* [FreeBSD Documentation Portal](https://docs.freebsd.org/) – central documentation hub for FreeBSD handbooks, articles, and manuals
+* [FreeBSD Manual Pages](https://man.freebsd.org/) – searchable FreeBSD manual pages
+* [OpenBSD FAQ](https://www.openbsd.org/faq/index.html) – canonical OpenBSD guide covering installation, configuration, and daily administration
+* [OpenBSD Manual Pages](https://man.openbsd.org/) – searchable OpenBSD manual pages
+* [NetBSD Wiki](https://wiki.netbsd.org/) – community-maintained NetBSD knowledge base with practical guides and project documentation
+* [NetBSD Manual Pages](https://man.netbsd.org/) – searchable NetBSD manual pages
 
 ## Books
 
@@ -262,9 +274,18 @@ In this section, you can find sites presenting news about BSD.
 
 * [Bastille](https://bastillebsd.org/) – Bastille helps you quickly create and manage FreeBSD Jails
 * [CBSD](https://www.bsdstore.ru/en/about.html) – CBSD is a management layer written for the FreeBSD jail(8) subsystem, bhyve and Xen
-* [Runhyve](https://runhyve.app/) – the virtual machines manager for Bhyve
 * [BSD-Cloud-Image](https://bsd-cloud-image.org/) – a collection of (unofficial) prebuilt BSD cloud images, for instance for OpenStack
-* [Sylve](https://github.com/AlchemillaHQ/Sylve) -  Lightweight GUI for managing Bhyve, Jails, ZFS, networking, and more on FreeBSD 
+* [FreshPorts](https://www.freshports.org/) – searchable index of FreeBSD ports, commits, dependencies, and package metadata
+* [HAMMER2](https://www.dragonflybsd.org/hammer/) – DragonFly BSD's default copy-on-write filesystem, with snapshots, compression, deduplication, and checksumming
+* [iocage](https://github.com/freebsd/iocage) – FreeBSD jail manager focused on simple jail and container management
+* [OpenZFS](https://openzfs.org/) – open-source storage platform used by FreeBSD and other operating systems
+* [pkg](https://github.com/freebsd/pkg) – package management toolchain for FreeBSD and other BSD systems
+* [pkgsrc](https://www.pkgsrc.org/) – cross-platform package management system from NetBSD
+* [pot](https://pot.pizzamig.dev/) – FreeBSD jail management tool for container-style workflows
+* [poudriere](https://github.com/freebsd/poudriere) – bulk package builder and test framework used to build FreeBSD packages in clean jails
+* [Runhyve](https://runhyve.app/) – the virtual machines manager for Bhyve
+* [Sylve](https://github.com/AlchemillaHQ/Sylve) – lightweight GUI for managing Bhyve, Jails, ZFS, networking, and more on FreeBSD
+* [vm-bhyve](https://github.com/freebsd/vm-bhyve/) – shell-based, minimal-dependency management system for FreeBSD bhyve virtual machines
 
 ## Gaming
 
