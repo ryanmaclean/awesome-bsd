@@ -2,7 +2,7 @@
 
 This document is a database of links related to the BSD operating systems and BSD software license.
 
-[Structure](https://github.com/DiscoverBSD/BSD-Links/issues/1) is as follows:
+Structure is as follows:
 
 * [Operating systems](#operating-systems) – official and other links
 * [BSD news](#bsd-news) – where to look for news
@@ -19,7 +19,7 @@ Please see [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines.
 In this section, you can find official BSD OSes links (in alphabetical order) with short descriptions as can be found on their pages.
 
 ### BSD Router Project
-BSD Router Project (BSDRP) is an embedded free and open-source router distribution based on [FreeBSD](https://www.freebsd.org/) with [Quagga](https://www.quagga.net/) and [BIRD](https://bird.network.cz/).
+BSD Router Project (BSDRP) is an embedded free and open-source router distribution based on [FreeBSD](https://www.freebsd.org/) with [FRRouting](https://frrouting.org/) and [BIRD](https://bird.network.cz/).
 
 * [official site](https://bsdrp.net/)
 * [download](https://bsdrp.net/downloads?DokuWiki=e8a2af21cc91416f910347e472b73841)
@@ -65,7 +65,7 @@ GhostBSD is a user-friendly, desktop-oriented operating system based on [FreeBSD
 HardenedBSD is a security-enhanced fork of FreeBSD. The HardenedBSD Project is implementing many exploit mitigation and security technologies on top of FreeBSD.
 
 * [official site](https://hardenedbsd.org)
-* [download](http://jenkins.hardenedbsd.org/)
+* [download](https://installers.hardenedbsd.org/pub/current/)
 * [mailing list](https://hardenedbsd.org/content/mailing-lists)
 * [wiki](https://github.com/HardenedBSD/hardenedBSD/wiki)
 * [/r/hardenedbsd](https://www.reddit.com/r/hardenedbsd)
@@ -134,7 +134,7 @@ OPNsense is an open source, easy-to-use and easy-to-build FreeBSD based firewall
 
 * [official site](https://opnsense.org)
 * [download](https://opnsense.org/download/)
-* [mailing list](https://opnsense.org/support-overview/mailing-list/)
+* [forum](https://forum.opnsense.org/)
 * [/r/opnsense](https://www.reddit.com/r/opnsense)
 * [/r/OPNsenseFirewall](https://www.reddit.com/r/OPNsenseFirewall)
 * [Twitter](https://twitter.com/opnsense)
@@ -244,12 +244,10 @@ In this section, you can find sites presenting news about BSD.
 * [New York City \*BSD User Group](https://nycbug.org/)
 * [New Delhi BSD User Group](https://ndbug.in/)
 * [OpenBSD user groups](https://www.openbsd.org/groups.html)
-* [Orlando BSD user group](https://www.orlandobsd.org/)
 * [Southeast Michigan BSD User Group](http://www.semibug.org/)
 
 ## Learning
 
-* [The BSD Certification Group](http://www.bsdcertification.org/) – a non-profit organization committed to creating and maintaining a global certification standard for system administration on BSD-based operating systems.
 * [TeachBSD](http://teachbsd.org/) – Teaching Operating Systems with Tracing: a set of courses for students and software practitioners.
 * [FreeBSD Documentation Portal](https://docs.freebsd.org/) – central documentation hub for FreeBSD handbooks, articles, and manuals
 * [FreeBSD Manual Pages](https://man.freebsd.org/) – searchable FreeBSD manual pages
