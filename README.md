@@ -19,6 +19,7 @@ Pick by platform:
 * **i386 / 32-bit x86:** start with [NetBSD](#netbsd) or [OpenBSD](#openbsd) for older PCs. [FreeBSD](#freebsd) 14.x is the last FreeBSD release line with standalone i386 support; FreeBSD 15.0 and later do not provide i386 install images.
 * **arm64 / aarch64:** start with [FreeBSD](#freebsd), [OpenBSD](#openbsd), or [NetBSD](#netbsd). Check board-specific notes before assuming Wi-Fi, GPU, sleep, or boot support.
 * **riscv64:** start with [FreeBSD](#freebsd), [OpenBSD](#openbsd), or [NetBSD](#netbsd), but expect a more experimental path than amd64.
+* **Octeon / MIPS64 network appliances:** start with [OpenBSD/octeon](https://www.openbsd.org/octeon.html). [NetBSD/evbmips](https://wiki.netbsd.org/ports/evbmips/) supports some Cavium Octeon designs, including Ubiquiti EdgeRouter models. [FreeBSD](#freebsd) MIPS is unsupported as of FreeBSD 14.0.
 * **32-bit ARM boards:** check [NetBSD](#netbsd) first, then [FreeBSD](#freebsd) if the board is explicitly supported.
 * **STM32, ESP32-C6, ESP32, Arduino, and similar microcontrollers:** do not expect a mainstream BSD. Look at BSD-inspired or Unix-like embedded projects only when the hardware has enough memory and an MMU, such as [LiteBSD](#litebsd) or [RetroBSD](#retrobsd).
 * **MiSTer FPGA and retro hardware:** treat BSD as historical or experimental context, not the default operating environment. Start with [NetBSD](#netbsd) only if there is a matching port or board-specific evidence.
