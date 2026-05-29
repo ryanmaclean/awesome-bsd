@@ -86,11 +86,21 @@ These are not default newcomer starting points.
 
 BSD systems are not Linux distributions with different package names. Each BSD ships a coherent base system, its own manual pages, and project-specific administration tools.
 
+Guides to consult when verifying Linux-to-BSD mappings:
+
+* FreeBSD Quickstart Guide for Linux Users.
+* FreeBSD Handbook.
+* OpenBSD FAQ, OpenBSD afterboot(8), and OpenBSD manual pages.
+* NetBSD Guide and pkgsrc guide.
+* DragonFly BSD Handbook and DPorts documentation.
+
 Common translation points:
 
 * Shell: expect base `sh`, `ksh`, or `tcsh`; do not assume Bash-only scripts work.
-* Packages: FreeBSD uses `pkg`; OpenBSD uses `pkg_add`, `pkg_delete`, and `pkg_info`; NetBSD commonly uses pkgsrc and `pkgin`.
-* Services: do not assume `systemctl`. FreeBSD uses rc scripts and `service`; OpenBSD uses `rcctl`; NetBSD uses `/etc/rc.d` with `service`-style rc scripts depending on context.
+* Third-party files: FreeBSD and DragonFly commonly use `/usr/local`; NetBSD pkgsrc commonly uses `/usr/pkg`; OpenBSD packages also install under `/usr/local`.
+* Packages: FreeBSD and DragonFly use `pkg`; OpenBSD uses `pkg_add`, `pkg_delete`, and `pkg_info`; NetBSD uses pkgsrc tools and often `pkgin` for binary packages.
+* Updates: FreeBSD has `freebsd-update` for base-system binary updates; OpenBSD uses `sysupgrade` and `syspatch`; NetBSD and DragonFly have their own release and source/pkgsrc workflows.
+* Services: do not assume `systemctl`. FreeBSD uses rc scripts and `service`; OpenBSD uses `rcctl`; NetBSD and DragonFly use rc.d-style systems.
 * Networking: do not assume `ip` or `eth0`. Use `ifconfig`, `route`, and driver-based interface names such as `em0`, `re0`, or `vio0`.
 * Firewalling: do not assume `iptables` or `nft`. OpenBSD uses PF; FreeBSD commonly uses PF or IPFW; NetBSD has its own firewall history and PF/NPF context.
 * Hardware inventory: Linux `lspci`, `lsusb`, and `lsblk` map imperfectly. Expect tools such as `pciconf`, `usbconfig`, `pcictl`, `usbdevs`, `geom`, `gpart`, `camcontrol`, `disklabel`, and `dmesg`, depending on BSD.
@@ -98,6 +108,7 @@ Common translation points:
 * Tracing: FreeBSD has `truss` as a common `strace` counterpart.
 * System settings: prefer `sysctl` over Linux `/proc` and `/sys` assumptions.
 * Build tools: BSD `make` is not GNU Make; GNU Make is usually installed as `gmake`.
+* Privilege escalation: OpenBSD commonly uses `doas`; do not assume `sudo` is installed.
 * Core utilities: flags and output can differ from GNU coreutils. Read the target system's man page before scripting.
 
 ## News, Community, And Learning
