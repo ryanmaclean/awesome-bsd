@@ -111,6 +111,23 @@ Common translation points:
 * Privilege escalation: OpenBSD commonly uses `doas`; do not assume `sudo` is installed.
 * Core utilities: flags and output can differ from GNU coreutils. Read the target system's man page before scripting.
 
+## Agent Operating Notes
+
+For hands-on work, an agent usually needs a disposable VM, console access, and the target BSD's own manual pages more than it needs a long link list.
+
+Best practices:
+
+* Prefer fresh VMs or snapshots. Do not test installer, package, firewall, disk, or bootloader changes on a shared host.
+* Use QEMU when portability matters or the host is not FreeBSD. Use bhyve when the host is FreeBSD and the task is specifically FreeBSD virtualization.
+* Prefer serial console or text console capture for automation. GUI installers, VNC-only flows, and screenshots are harder to verify reliably.
+* Do not assume default passwords. Read the image or installer notes for that exact image, change credentials immediately, and never publish recovered passwords.
+* Keep test VMs isolated by default. Use NAT or host-only networking unless the task explicitly needs bridged LAN access.
+* Do not expose SSH, web admin panels, or firewall/router appliances to the public network during evaluation.
+* Verify downloaded images with the project's published checksum/signature process before booting them.
+* Treat third-party VM images as untrusted. Prefer official install media for security-sensitive work.
+* In hosted agents such as Bits or code-session runners, assume no stable nested virtualization, no privileged device access, and no secrets. Produce a reproducible plan when a real VM cannot be run.
+* Record exact OS release, architecture, VM type, disk layout, network mode, and console path when reporting results.
+
 ## News, Community, And Learning
 
 * FreeBSD Foundation, NetBSD Foundation, OpenBSD Foundation - project support organizations.
