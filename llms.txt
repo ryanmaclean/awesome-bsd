@@ -2,12 +2,11 @@
 
 > A curated entry point for BSD operating systems, communities, documentation, and ecosystem software.
 
-## Primary Files
+## Canonical Context
 
-* `README.md` - canonical human-readable and agent-readable BSD map.
-* `llms.txt` - compact discovery pointer for LLM tooling.
+Read `README.md` first. It is the canonical human-readable and agent-readable source of truth. This file is only a compact discovery pointer.
 
-## Newcomer Pathways
+## Quick Routing
 
 * General-purpose server/workstation BSD: start with FreeBSD and the FreeBSD Handbook.
 * Security-focused compact base system: start with OpenBSD and the OpenBSD FAQ.
@@ -16,16 +15,9 @@
 * Desktop-oriented FreeBSD derivatives: start with GhostBSD or NomadBSD.
 * Firewall/router appliances: start with OPNsense, pfSense, or BSD Router Project.
 
-## Curation Rules
+## Agent Notes
 
-* Canonical sources first: official docs, manpages, foundations, project pages, source repositories.
-* Avoid unlabeled stale or historical entries in newcomer paths.
-* Prefer factual one-sentence descriptions over marketing copy.
-* Every added URL should be reachable and useful without login.
-* Keep this file aligned with the README one-page guide.
-
-## Validation
-
-* `git diff --check`
-* Markdown whitespace check in `.github/workflows/docs-quality.yml`
-* Lychee link audit configured by `lychee.toml`
+* Keep `README.md` canonical; do not reintroduce generated sidecar indexes by default.
+* CI uses POSIX `sh` for inline checks and Lychee for link auditing.
+* If a new helper script is genuinely needed, prefer Nushell (`.nu`).
+* Run `git diff --check`; CI checks markdown hygiene and links.

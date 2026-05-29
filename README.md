@@ -2,7 +2,7 @@
 
 This is a curated entry point for BSD operating systems, communities, documentation, and ecosystem software. It is designed as a useful first page for people and a compact map for agents.
 
-## One-page guide
+## Start here
 
 BSD is a family of Unix-like operating systems descended from the Berkeley Software Distribution. If you are new to BSD, start with official documentation first:
 
@@ -19,9 +19,8 @@ Status language used here:
 * **Specialized:** useful for a narrower audience, such as research, embedded, routing, appliances, or gaming.
 * **Historical:** useful context, but not a default starting point.
 
-Information architecture:
+Contents:
 
-* [Start here](#start-here) – a short path for newcomers
 * [Operating systems](#operating-systems) – official and other links
 * [BSD news](#bsd-news) – where to look for news
 * [Forums and communities](#forums-and-communities) – forums, meetups etc
@@ -31,10 +30,6 @@ Information architecture:
 * [Gaming](#gaming)
 * [Other](#other)
 * [Maintenance](#maintenance)
-
-## Start here
-
-Use the one-page guide above to choose a starting point. Then follow the official handbook, FAQ, or guide for the BSD that matches your goal.
 
 ## Operating systems
 In this section, you can find official BSD OSes links (in alphabetical order) with short descriptions as can be found on their pages.
@@ -332,6 +327,14 @@ When adding or changing entries:
 * Mark inactive, niche, research-focused, or historical entries clearly.
 * Check each added or changed URL with redirects enabled.
 * Keep descriptions short, factual, and non-marketing.
+
+Agent and shell notes:
+
+* This is a markdown-only repository. Do not add generated sidecar indexes unless they remove more maintenance cost than they add.
+* `README.md` is canonical. `llms.txt` is only a compact discovery pointer.
+* GitHub Actions inline checks use portable POSIX `sh`.
+* Avoid new helper scripts unless the repo genuinely needs them; if one is needed, use Nushell (`.nu`) rather than adding new Zsh, Fish, Node, or Python tooling.
+* Do not add GPL, LGPL, AGPL, or copyleft dependencies, tools, or libraries.
 
 Required check before committing:
 
