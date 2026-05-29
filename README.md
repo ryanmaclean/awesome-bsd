@@ -1,8 +1,25 @@
 # Awesome BSD [![Awesome](https://awesome.re/badge.svg)](https://github.com/sindresorhus/awesome)
 
-This document is a curated entry point for BSD operating systems, communities, documentation, and ecosystem software.
+This is a curated entry point for BSD operating systems, communities, documentation, and ecosystem software. It is designed as a useful first page for people and a compact map for agents.
 
-Structure is as follows:
+## One-page guide
+
+BSD is a family of Unix-like operating systems descended from the Berkeley Software Distribution. If you are new to BSD, start with official documentation first:
+
+* **General server or workstation:** [FreeBSD](#freebsd) and the [FreeBSD Handbook](https://docs.freebsd.org/en/books/handbook/).
+* **Security-focused compact base system:** [OpenBSD](#openbsd) and the [OpenBSD FAQ](https://www.openbsd.org/faq/).
+* **Portability and unusual hardware:** [NetBSD](#netbsd) and the [NetBSD Guide](https://netbsd.org/docs/guide/en/).
+* **Distinct kernel and filesystem work:** [DragonFly BSD](#dragonfly-bsd) and the [DragonFly BSD Handbook](https://www.dragonflybsd.org/docs/newhandbook/).
+* **Desktop-oriented FreeBSD derivatives:** [GhostBSD](#ghostbsd) or [NomadBSD](#nomadbsd).
+* **Firewall or router appliance:** [OPNsense](#opnsense), [pfSense](#pfsense), or [BSD Router Project](#bsd-router-project).
+
+Status language used here:
+
+* **Active:** suitable for newcomer paths or routine use.
+* **Specialized:** useful for a narrower audience, such as research, embedded, routing, appliances, or gaming.
+* **Historical:** useful context, but not a default starting point.
+
+Information architecture:
 
 * [Start here](#start-here) – a short path for newcomers
 * [Operating systems](#operating-systems) – official and other links
@@ -13,28 +30,11 @@ Structure is as follows:
 * [BSD-related software](#bsd-related-software)
 * [Gaming](#gaming)
 * [Other](#other)
-
-Please see [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines.
-
-For AI agents and post-AI tooling, see [AGENTS.md](AGENTS.md), [llms.txt](llms.txt), and the machine-readable files in [data](data).
+* [Maintenance](#maintenance)
 
 ## Start here
 
-BSD is a family of Unix-like operating systems descended from the Berkeley Software Distribution. If you are new to BSD, start with official documentation first:
-
-* [FreeBSD Handbook](https://docs.freebsd.org/en/books/handbook/) – best general-purpose starting point for servers, workstations, jails, networking, storage, and desktop setup.
-* [OpenBSD FAQ](https://www.openbsd.org/faq/) – best starting point for OpenBSD installation, system management, networking, PF, and project practices.
-* [NetBSD Guide](https://netbsd.org/docs/guide/en/) – best starting point for NetBSD installation, administration, portability, and pkgsrc.
-* [DragonFly BSD Handbook](https://www.dragonflybsd.org/docs/newhandbook/) – best starting point for DragonFly BSD and HAMMER2.
-
-Quick orientation:
-
-* Start with [FreeBSD](#freebsd) if you want broad documentation, a large ports/packages ecosystem, jails, bhyve, ZFS, or a practical server/workstation BSD.
-* Start with [OpenBSD](#openbsd) if you want a compact base system, strong documentation, security-focused defaults, PF, or network services.
-* Start with [NetBSD](#netbsd) if you care about portability, older or unusual hardware, pkgsrc, or a clean traditional Unix environment.
-* Start with [DragonFly BSD](#dragonfly-bsd) if you want to explore HAMMER2, DragonFly's kernel work, or a smaller BSD with a distinct technical direction.
-* Look at [GhostBSD](#ghostbsd) or [NomadBSD](#nomadbsd) if you specifically want a desktop-oriented FreeBSD derivative.
-* Look at [OPNsense](#opnsense), [pfSense](#pfsense), or [BSD Router Project](#bsd-router-project) if you want a firewall or router appliance.
+Use the one-page guide above to choose a starting point. Then follow the official handbook, FAQ, or guide for the BSD that matches your goal.
 
 ## Operating systems
 In this section, you can find official BSD OSes links (in alphabetical order) with short descriptions as can be found on their pages.
@@ -320,3 +320,25 @@ In this section, you can find sites presenting news about BSD.
 * [Unix History](https://www.levenez.com/unix/) - Simplified diagram of Unix history by Éric Lévénez
 * [Wikipedia](https://en.wikipedia.org/wiki/Comparison_of_BSD_operating_systems) - Comparison of BSD operating systems
 * [Wikipedia](https://en.wikipedia.org/wiki/List_of_BSD_operating_systems) - List of BSD operating systems
+
+## Maintenance
+
+This README is the source of truth. Keep changes small, use canonical sources first, and avoid unlabeled stale links in newcomer paths.
+
+When adding or changing entries:
+
+* Prefer official documentation, project pages, foundations, manpages, and active communities.
+* Describe who the resource is for, not just what it is.
+* Mark inactive, niche, research-focused, or historical entries clearly.
+* Check each added or changed URL with redirects enabled.
+* Keep descriptions short, factual, and non-marketing.
+
+Required check before committing:
+
+```sh
+git diff --check
+```
+
+CI also checks markdown hygiene and links.
+
+For AI agents and post-AI tooling, this file is intentionally the main context surface. `llms.txt` exists only as a short discovery pointer back to this README.

@@ -4,11 +4,8 @@
 
 ## Primary Files
 
-* `README.md` - human-readable curated BSD map.
-* `data/starter-paths.json` - machine-readable newcomer pathways.
-* `data/resource-index.json` - machine-readable index of canonical/high-value resources.
-* `CONTRIBUTING.md` - contribution and quality expectations.
-* `AGENTS.md` - repo-local instructions for AI agents.
+* `README.md` - canonical human-readable and agent-readable BSD map.
+* `llms.txt` - compact discovery pointer for LLM tooling.
 
 ## Newcomer Pathways
 
@@ -25,11 +22,10 @@
 * Avoid unlabeled stale or historical entries in newcomer paths.
 * Prefer factual one-sentence descriptions over marketing copy.
 * Every added URL should be reachable and useful without login.
-* Keep `README.md`, `data/starter-paths.json`, and `data/resource-index.json` consistent.
+* Keep this file aligned with the README one-page guide.
 
 ## Validation
 
 * `git diff --check`
-* JSON parse of files under `data/`
 * Markdown whitespace check in `.github/workflows/docs-quality.yml`
 * Lychee link audit configured by `lychee.toml`

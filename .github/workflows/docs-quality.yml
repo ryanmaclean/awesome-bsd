@@ -5,9 +5,7 @@ on:
     paths:
       - "**/*.md"
       - "**/*.markdown"
-      - "AGENTS.md"
       - "llms.txt"
-      - "data/**/*.json"
       - "lychee.toml"
       - ".github/workflows/docs-quality.yml"
   push:
@@ -16,9 +14,7 @@ on:
     paths:
       - "**/*.md"
       - "**/*.markdown"
-      - "AGENTS.md"
       - "llms.txt"
-      - "data/**/*.json"
       - "lychee.toml"
       - ".github/workflows/docs-quality.yml"
 
@@ -58,13 +54,6 @@ jobs:
             done < "$file"
           done
           exit "$failed"
-
-      - name: Validate JSON context
-        shell: sh
-        run: |
-          for file in $(git ls-files "data/*.json"); do
-            python3 -m json.tool "$file" >/dev/null
-          done
 
       - name: Check markdown links
         uses: lycheeverse/lychee-action@v2
