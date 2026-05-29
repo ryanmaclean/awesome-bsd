@@ -10,5 +10,6 @@ Read `README.md` first. It is the canonical human-readable and agent-readable so
 
 * Keep `README.md` canonical; do not reintroduce generated sidecar indexes by default.
 * CI uses POSIX `sh` for inline checks and Lychee for link auditing.
+* Normal edits need no `make`, `gmake`, LLVM, compiler toolchain, `sudo`, or `doas`.
 * If a new helper script is genuinely needed, prefer Nushell (`.nu`).
 * Run `git diff --check`; CI checks markdown hygiene and links.

@@ -338,6 +338,10 @@ Agent and shell notes:
 
 * This is a markdown-only repository. Do not add generated sidecar indexes unless they remove more maintenance cost than they add.
 * `README.md` is canonical. `llms.txt` is only a compact discovery pointer.
+* Required local tools are `git`, POSIX `sh`, and standard text tools such as `sed`, `awk`, `grep`, or `rg`.
+* `curl` is useful for manual link checks, but the canonical full link audit runs in CI with Lychee.
+* No build toolchain is required: do not assume `make`, `gmake`, LLVM/Clang, GCC, Cargo, Node, Python packages, or BSD source-tree tooling for normal edits.
+* Privilege escalation is not required: do not use `sudo` or `doas` for repository maintenance.
 * GitHub Actions inline checks use portable POSIX `sh`.
 * Avoid new helper scripts unless the repo genuinely needs them; if one is needed, use Nushell (`.nu`) rather than adding new Zsh, Fish, Node, or Python tooling.
 * Do not add GPL, LGPL, AGPL, or copyleft dependencies, tools, or libraries.
