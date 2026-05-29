@@ -6,15 +6,6 @@
 
 Read `README.md` first. It is the canonical human-readable and agent-readable source of truth. This file is only a compact discovery pointer.
 
-## Quick Routing
-
-* General-purpose server/workstation BSD: start with FreeBSD and the FreeBSD Handbook.
-* Security-focused compact base system: start with OpenBSD and the OpenBSD FAQ.
-* Portability and unusual hardware: start with NetBSD and the NetBSD Guide.
-* Distinct kernel/filesystem work: start with DragonFly BSD and the DragonFly BSD Handbook.
-* Desktop-oriented FreeBSD derivatives: start with GhostBSD or NomadBSD.
-* Firewall/router appliances: start with OPNsense, pfSense, or BSD Router Project.
-
 ## Agent Notes
 
 * Keep `README.md` canonical; do not reintroduce generated sidecar indexes by default.

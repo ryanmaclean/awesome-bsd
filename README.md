@@ -1,6 +1,6 @@
 # Awesome BSD [![Awesome](https://awesome.re/badge.svg)](https://github.com/sindresorhus/awesome)
 
-This is a curated entry point for BSD operating systems, communities, documentation, and ecosystem software. It is designed as a useful first page for people and a compact map for agents.
+This is a curated entry point for BSD operating systems, communities, documentation, and ecosystem software.
 
 ## Start here
 
@@ -12,12 +12,6 @@ BSD is a family of Unix-like operating systems descended from the Berkeley Softw
 * **Distinct kernel and filesystem work:** [DragonFly BSD](#dragonfly-bsd) and the [DragonFly BSD Handbook](https://www.dragonflybsd.org/docs/newhandbook/).
 * **Desktop-oriented FreeBSD derivatives:** [GhostBSD](#ghostbsd) or [NomadBSD](#nomadbsd).
 * **Firewall or router appliance:** [OPNsense](#opnsense), [pfSense](#pfsense), or [BSD Router Project](#bsd-router-project).
-
-Status language used here:
-
-* **Active:** suitable for newcomer paths or routine use.
-* **Specialized:** useful for a narrower audience, such as research, embedded, routing, appliances, or gaming.
-* **Historical:** useful context, but not a default starting point.
 
 Contents:
 
@@ -32,7 +26,7 @@ Contents:
 * [Maintenance](#maintenance)
 
 ## Operating systems
-In this section, you can find official BSD OSes links (in alphabetical order) with short descriptions as can be found on their pages.
+BSD operating systems and BSD-derived systems, in alphabetical order.
 
 ### BSD Router Project
 BSD Router Project (BSDRP) is an embedded free and open-source router distribution based on [FreeBSD](https://www.freebsd.org/) with [FRRouting](https://frrouting.org/) and [BIRD](https://bird.network.cz/).
@@ -196,7 +190,7 @@ ZRouter.org is a FreeBSD-based firmware for embedded devices.
 
 ## BSD news
 
-In this section, you can find sites presenting news about BSD.
+News and podcasts covering BSD.
 
 ### News sites
 
@@ -327,6 +321,7 @@ When adding or changing entries:
 * Mark inactive, niche, research-focused, or historical entries clearly.
 * Check each added or changed URL with redirects enabled.
 * Keep descriptions short, factual, and non-marketing.
+* If you introduce a status taxonomy, apply it consistently instead of defining labels that only appear in the contribution guidance.
 
 Agent and shell notes:
 
