@@ -6,10 +6,10 @@ A compact starting point for BSD operating systems, documentation, communities, 
 
 BSD is a family of Unix-like operating systems descended from the Berkeley Software Distribution. Start with official documentation:
 
-* **General server, workstation, jail, bhyve, or ZFS use:** [FreeBSD](https://www.freebsd.org/) and the [FreeBSD Handbook](https://docs.freebsd.org/en/books/handbook/).
-* **Security-focused base system, PF, network services, or compact documentation:** [OpenBSD](https://www.openbsd.org/) and the [OpenBSD FAQ](https://www.openbsd.org/faq/).
-* **Portability, old or unusual hardware, pkgsrc, or classic Unix feel:** [NetBSD](https://netbsd.org/) and the [NetBSD Guide](https://netbsd.org/docs/guide/en/).
-* **HAMMER2, kernel work, or a smaller x86-64 BSD:** [DragonFly BSD](https://www.dragonflybsd.org/) and the [DragonFly BSD Handbook](https://www.dragonflybsd.org/docs/newhandbook/).
+* **General server, workstation, jail, bhyve, or ZFS use:** FreeBSD and the FreeBSD Handbook.
+* **Security-focused base system, PF, network services, or compact documentation:** OpenBSD and the OpenBSD FAQ.
+* **Portability, old or unusual hardware, pkgsrc, or classic Unix feel:** NetBSD and the NetBSD Guide.
+* **HAMMER2, kernel work, or a smaller x86-64 BSD:** DragonFly BSD and the DragonFly BSD Handbook.
 * **Desktop-oriented FreeBSD:** GhostBSD or NomadBSD.
 * **Firewall or router appliance:** OPNsense, pfSense, or BSD Router Project.
 
@@ -40,10 +40,10 @@ Notes:
 
 ## Core BSDs
 
-* [FreeBSD](https://www.freebsd.org/) - general-purpose BSD for servers, workstations, networking, storage, jails, bhyve, and ZFS.
-* [OpenBSD](https://www.openbsd.org/) - security-focused BSD with strong manual pages, PF, OpenSSH, and a compact base system.
-* [NetBSD](https://netbsd.org/) - portable BSD for many CPU families, older systems, embedded boards, and pkgsrc.
-* [DragonFly BSD](https://www.dragonflybsd.org/) - x86-64 BSD with a distinct kernel direction and HAMMER2 filesystem.
+* FreeBSD - general-purpose BSD for servers, workstations, networking, storage, jails, bhyve, and ZFS.
+* OpenBSD - security-focused BSD with strong manual pages, PF, OpenSSH, and a compact base system.
+* NetBSD - portable BSD for many CPU families, older systems, embedded boards, and pkgsrc.
+* DragonFly BSD - x86-64 BSD with a distinct kernel direction and HAMMER2 filesystem.
 
 ## Desktop, Appliance, And Specialized Systems
 
@@ -99,4 +99,4 @@ These are not default newcomer starting points.
 
 ## Maintenance
 
-This README is the source of truth. Prefer official documentation and project pages over community or aggregator links. Describe who a resource is for, label niche or historical entries clearly, keep descriptions factual, and run `git diff --check` before committing.
+This README is the source of truth. Keep outbound links out of this file unless there is a strong reason to add one. Prefer official documentation and project pages when verifying entries, but record names and descriptions here. Describe who a resource is for, label niche or historical entries clearly, keep descriptions factual, and run `git diff --check` before committing.
