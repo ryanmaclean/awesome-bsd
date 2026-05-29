@@ -82,6 +82,24 @@ These are not default newcomer starting points.
 * BSD-Cloud-Image - unofficial BSD cloud images.
 * linuxulator-steam-utils - Steam client helpers for FreeBSD Linux emulation.
 
+## Linux-To-BSD Orientation
+
+BSD systems are not Linux distributions with different package names. Each BSD ships a coherent base system, its own manual pages, and project-specific administration tools.
+
+Common translation points:
+
+* Shell: expect base `sh`, `ksh`, or `tcsh`; do not assume Bash-only scripts work.
+* Packages: FreeBSD uses `pkg`; OpenBSD uses `pkg_add`, `pkg_delete`, and `pkg_info`; NetBSD commonly uses pkgsrc and `pkgin`.
+* Services: do not assume `systemctl`. FreeBSD uses rc scripts and `service`; OpenBSD uses `rcctl`; NetBSD uses `/etc/rc.d` with `service`-style rc scripts depending on context.
+* Networking: do not assume `ip` or `eth0`. Use `ifconfig`, `route`, and driver-based interface names such as `em0`, `re0`, or `vio0`.
+* Firewalling: do not assume `iptables` or `nft`. OpenBSD uses PF; FreeBSD commonly uses PF or IPFW; NetBSD has its own firewall history and PF/NPF context.
+* Hardware inventory: Linux `lspci`, `lsusb`, and `lsblk` map imperfectly. Expect tools such as `pciconf`, `usbconfig`, `pcictl`, `usbdevs`, `geom`, `gpart`, `camcontrol`, `disklabel`, and `dmesg`, depending on BSD.
+* Kernel modules: FreeBSD uses `kldstat`, `kldload`, and `kldunload`; other BSDs differ.
+* Tracing: FreeBSD has `truss` as a common `strace` counterpart.
+* System settings: prefer `sysctl` over Linux `/proc` and `/sys` assumptions.
+* Build tools: BSD `make` is not GNU Make; GNU Make is usually installed as `gmake`.
+* Core utilities: flags and output can differ from GNU coreutils. Read the target system's man page before scripting.
+
 ## News, Community, And Learning
 
 * FreeBSD Foundation, NetBSD Foundation, OpenBSD Foundation - project support organizations.
