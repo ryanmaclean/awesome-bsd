@@ -1,19 +1,19 @@
 # Awesome BSD [![Awesome](https://awesome.re/badge.svg)](https://github.com/sindresorhus/awesome)
 
-This is a curated entry point for BSD operating systems, communities, documentation, and ecosystem software.
+A compact starting point for BSD operating systems, documentation, communities, and ecosystem software.
 
-## Start here
+## Start Here
 
-BSD is a family of Unix-like operating systems descended from the Berkeley Software Distribution. If you are new to BSD, start with official documentation first:
+BSD is a family of Unix-like operating systems descended from the Berkeley Software Distribution. Start with official documentation:
 
-* **General server or workstation:** [FreeBSD](#freebsd) and the [FreeBSD Handbook](https://docs.freebsd.org/en/books/handbook/).
-* **Security-focused compact base system:** [OpenBSD](#openbsd) and the [OpenBSD FAQ](https://www.openbsd.org/faq/).
-* **Portability and unusual hardware:** [NetBSD](#netbsd) and the [NetBSD Guide](https://netbsd.org/docs/guide/en/).
-* **Distinct kernel and filesystem work:** [DragonFly BSD](#dragonfly-bsd) and the [DragonFly BSD Handbook](https://www.dragonflybsd.org/docs/newhandbook/).
-* **Desktop-oriented FreeBSD derivatives:** [GhostBSD](#ghostbsd) or [NomadBSD](#nomadbsd).
-* **Firewall or router appliance:** [OPNsense](#opnsense), [pfSense](#pfsense), or [BSD Router Project](#bsd-router-project).
+* **General server, workstation, jail, bhyve, or ZFS use:** [FreeBSD](https://www.freebsd.org/) and the [FreeBSD Handbook](https://docs.freebsd.org/en/books/handbook/).
+* **Security-focused base system, PF, network services, or compact documentation:** [OpenBSD](https://www.openbsd.org/) and the [OpenBSD FAQ](https://www.openbsd.org/faq/).
+* **Portability, old or unusual hardware, pkgsrc, or classic Unix feel:** [NetBSD](https://netbsd.org/) and the [NetBSD Guide](https://netbsd.org/docs/guide/en/).
+* **HAMMER2, kernel work, or a smaller x86-64 BSD:** [DragonFly BSD](https://www.dragonflybsd.org/) and the [DragonFly BSD Handbook](https://www.dragonflybsd.org/docs/newhandbook/).
+* **Desktop-oriented FreeBSD:** [GhostBSD](https://www.ghostbsd.org/) or [NomadBSD](https://nomadbsd.org/).
+* **Firewall or router appliance:** [OPNsense](https://opnsense.org/), [pfSense](https://www.pfsense.org/), or [BSD Router Project](https://bsdrp.net/).
 
-Platform map:
+## Platform Map
 
 ```text
 hardware or goal
@@ -31,328 +31,74 @@ hardware or goal
     `-- not a mainstream BSD target; check embedded or historical projects
 ```
 
-Platform notes:
+Notes:
 
-* [FreeBSD](#freebsd) 14.x is the last FreeBSD release line with standalone i386 support; FreeBSD 15.0 and later do not provide i386 install images.
+* FreeBSD 14.x is the last FreeBSD release line with standalone i386 support; FreeBSD 15.0 and later do not provide i386 install images.
 * On arm64 boards, check board-specific notes before assuming Wi-Fi, GPU, sleep, or boot support.
-* On riscv64, expect a more experimental path than amd64.
-* For Octeon, start with [OpenBSD/octeon](https://www.openbsd.org/octeon.html). [NetBSD/evbmips](https://wiki.netbsd.org/ports/evbmips/) supports some Cavium Octeon designs, including Ubiquiti EdgeRouter models. [FreeBSD](#freebsd) MIPS is unsupported as of FreeBSD 14.0.
-* For STM32, ESP32-C6, ESP32, Arduino, and similar microcontrollers, look at BSD-inspired or Unix-like embedded projects only when the hardware has enough memory and an MMU, such as [LiteBSD](#litebsd) or [RetroBSD](#retrobsd).
-
-Contents:
-
-* [Operating systems](#operating-systems) – official and other links
-* [BSD news](#bsd-news) – where to look for news
-* [Forums and communities](#forums-and-communities) – forums, meetups etc
-* [Learning](#learning) – where to learn BSD
-* [Books](#books) – books about BSD
-* [BSD-related software](#bsd-related-software)
-* [Gaming](#gaming)
-* [Other](#other)
-* [Maintenance](#maintenance)
-
-## Operating systems
-BSD operating systems and BSD-derived systems, in alphabetical order.
-
-### BSD Router Project
-BSD Router Project (BSDRP) is an embedded free and open-source router distribution based on [FreeBSD](https://www.freebsd.org/) with [FRRouting](https://frrouting.org/) and [BIRD](https://bird.network.cz/).
-
-* [official site](https://bsdrp.net/)
-* [download](https://bsdrp.net/downloads?DokuWiki=e8a2af21cc91416f910347e472b73841)
-* [mailing list](https://bsdrp.net/community/mailing_lists)
-
-### CheriBSD
-[CHERI (Capability Hardware Enhanced RISC Instructions)](https://www.cl.cam.ac.uk/research/security/ctsrd/cheri/) is a joint research project of SRI International and the University of Cambridge to revisit fundamental design choices in hardware and software to improve system security dramatically. CheriBSD is an adaptation of the open-source FreeBSD operating system to support the CHERI-MIPS, CHERI-RISC-V, and Arm Morello ISAs.
-
-* [official site](https://www.cl.cam.ac.uk/research/security/ctsrd/cheri/cheribsd.html)
-* [download](https://cheri-dist.cl.cam.ac.uk/)
-* [CTSRD-CHERI/cheribsd](https://github.com/CTSRD-CHERI/cheribsd)
-
-### DragonFly BSD
-DragonFly belongs to the same class of operating systems as other BSD-derived systems and Linux. It is based on the same UNIX ideals and APIs and shares ancestor code with other BSD operating systems. DragonFly provides an opportunity for the BSD base to grow in an entirely different direction from the one taken in the FreeBSD, NetBSD, and OpenBSD series.
-
-* [official site](https://www.dragonflybsd.org)
-* [download](https://www.dragonflybsd.org/download/)
-* [mailing list](https://www.dragonflybsd.org/mailinglists/)
-* [handbook](https://www.dragonflybsd.org/docs/newhandbook/)
-* [/r/dragonflybsd](https://www.reddit.com/r/dragonflybsd)
-* [DragonFly BSD Digest](https://www.dragonflydigest.com/) – a running description of activity related to DragonFly BSD.
-
-### FreeBSD
-Founded in 1993, FreeBSD is an advanced operating system that powers modern [desktops, servers, and embedded devices](https://www.freebsd.org/platforms/). Advanced features make FreeBSD the [system of choice](https://freebsdfoundation.org/freebsd-project/what-is-freebsd/) for many of the most pervasive embedded networking and storage devices and busiest websites. [FreeBSD developers](https://docs.freebsd.org/en/articles/contributors/#staff-committers) form part of a [diverse and extensive community](https://www.freebsd.org/community/); members are welcoming and approachable. There's a focus on widespread use, and on building the best possible system. Experienced users and developers are [always willing to help the less experienced](https://www.freebsd.org/advocacy/whyusefreebsd/).
-
-* [official site](https://www.freebsd.org)
-* [download](https://www.freebsd.org/where.html)
-* [forum](https://forums.freebsd.org/)
-* [handbook](https://docs.freebsd.org/en/books/handbook/)
-* [mailing list](https://www.freebsd.org/community/mailinglists/)
-* [FreshPorts](https://www.freshports.org/)
-* [/r/freebsd](https://www.reddit.com/r/freebsd)
-* [X](https://x.com/freebsd)
-
-### GhostBSD
-GhostBSD is a user-friendly, desktop-oriented operating system based on [FreeBSD](#freebsd). GhostBSD aims to provide a familiar workstation with the benefits of FreeBSD, combined with the MATE desktop environment and a focus on user-friendliness.
-
-* [official site](https://www.ghostbsd.org/)
-* [download](https://www.ghostbsd.org/download)
-* [forums](https://forums.ghostbsd.org/)
-
-### HardenedBSD
-HardenedBSD is a security-enhanced fork of FreeBSD. The HardenedBSD Project is implementing many exploit mitigation and security technologies on top of FreeBSD.
-
-* [official site](https://hardenedbsd.org)
-* [download](https://installers.hardenedbsd.org/pub/current/)
-* [mailing list](https://hardenedbsd.org/content/mailing-lists)
-* [wiki](https://github.com/HardenedBSD/hardenedBSD/wiki)
-* [/r/hardenedbsd](https://www.reddit.com/r/hardenedbsd)
-
-### helloSystem
-helloSystem is a desktop system for creators focusing on simplicity, elegance, and usability. Its design follows the “Less, but better” philosophy. It is intended as a system for “mere mortals”, welcoming to switchers from the Mac. [FreeBSD](#freebsd) is the core operating system.
-
-* [official site](https://hellosystem.github.io/)
-* [download](https://github.com/helloSystem/ISO/releases)
-* [handbook](https://hellosystem.github.io/docs/)
-
-### LiteBSD
-LiteBSD is a variant of the 4.4BSD operating system for microcontrollers. Currently, only the Microchip PIC32MZ family is supported. PIC32MZ is an MIPS32 processor with MMU with paging support and 512kbytes of on-chip RAM. These resources are enough to run 4.4BSD.
-
-* [official site](https://github.com/sergev/LiteBSD/wiki)
-* [download](http://litebsd.org/wiki/autobuild.php)
-
-### MidnightBSD
-MidnightBSD is a new BSD-derived operating system developed with desktop users in mind. It includes all the software you'd expect for your daily tasks — email, web browsing, word processing, gaming, and much more. With a small community of dedicated developers, MidnightBSD strives to create an easy-to-use operating system that everyone can use, freely. Available for x86, AMD64, and as Virtual Machines.
-
-* [official site](https://www.midnightbsd.org/)
-* [download](https://www.midnightbsd.org/download/)
-* [mailing list](https://www.midnightbsd.org/mailman/listinfo/)
-* [Twitter](https://twitter.com/midnightbsd)
-
-### MyBee
-MyBee is a FreeBSD-based distribution for managing containers (jail) and cloud VMs (bhyve) through a simplified API.
-
-* [official site](https://myb.convectix.com)
-* [download](https://myb.convectix.com/download/)
-* [guide](https://github.com/myb-project/guide)
-
-### NomadBSD
-
-NomadBSD is a 64-bit live system for USB flash drives, based on FreeBSD. Together with automatic hardware detection and setup, it is configured to be used as a desktop system that works out of the box but can also be used for data recovery.
-
- * [official site](https://nomadbsd.org/)
- * [download](https://nomadbsd.org/download.html)
- * [mailing list](https://www.freelists.org/list/nomadbsddevs)
-
-### NetBSD
-NetBSD is a free, fast, secure, and highly portable Unix-like Open Source operating system. It is available for a wide range of platforms, from large-scale servers and powerful desktop systems to handheld and embedded devices. Its clean design and advanced features make it excellent for use in both production and research environments, and the source code is freely available under a business-friendly license. NetBSD is developed and supported by a large and vivid international community. Many applications are readily available through pkgsrc, the NetBSD Packages Collection.
-
-* [official site](https://netbsd.org)
-* [download](https://netbsd.org/releases/)
-* [guide](https://netbsd.org/docs/guide/en/)
-* [mailing list](https://netbsd.org/mailinglists/)
-* [/r/netbsd](https://www.reddit.com/r/netbsd)
-* [NetBSD Planet](https://netbsd.fi/)
-
-### OpenBSD
-The OpenBSD project produces a FREE, multi-platform 4.4BSD-based UNIX-like operating system. Our efforts emphasize portability, standardization, correctness, [proactive security](https://www.openbsd.org/security.html) and [integrated cryptography](https://www.openbsd.org/crypto.html). As an example of the effect OpenBSD has, the popular [OpenSSH](https://www.openssh.com/) software comes from OpenBSD.
-
-* [official site](https://www.openbsd.org)
-* [download](https://www.openbsd.org/ftp.html)
-* [mailing list](https://www.openbsd.org/mail.html)
-* [OpenBSD Jumpstart](https://www.openbsdjumpstart.org)
-* [/r/openbsd](https://www.reddit.com/r/openbsd)
-* [/r/openbsd_gaming/](https://www.reddit.com/r/openbsd_gaming)
-* [Twitter](https://twitter.com/openbsd)
-* [Awesome OpenBSD](https://github.com/ligurio/openbsd-awesome) – a curated list of resources
-* [OpenBSD Journal](https://undeadly.org/) – a resource for the OpenBSD community
-
-### OPNsense
-OPNsense is an open source, easy-to-use and easy-to-build FreeBSD based firewall and routing platform. OPNsense includes most of the features available in expensive commercial firewalls, and more in many cases. OPNsense® is a fork of pfSense® that in its turn has been forked from m0n0wall®.
-
-* [official site](https://opnsense.org)
-* [download](https://opnsense.org/download/)
-* [forum](https://forum.opnsense.org/)
-* [/r/opnsense](https://www.reddit.com/r/opnsense)
-* [/r/OPNsenseFirewall](https://www.reddit.com/r/OPNsenseFirewall)
-* [Twitter](https://twitter.com/opnsense)
-
-### OS108
-OS108 is a fast, open, and Secure replacement Operating System for Windows and macOS. Built on top of NetBSD, OS108 provides a simple desktop-oriented operating system.
-
-* [official site](https://os108.org/)
-
-### pfSense
-pfSense® software is a free, open-source customized distribution of FreeBSD specifically tailored for use as a firewall and router that is entirely managed via a web interface. In addition to being a powerful, flexible firewalling and routing platform, it includes a long list of related features and a package system allowing further expandability without adding bloat and potential security vulnerabilities to the base distribution.
-
-* [official site](https://www.pfsense.org/)
-* [download](https://www.pfsense.org/download/)
-* [forums](https://forum.pfsense.org/)
-* [mailing list](https://www.pfsense.org/get-involved/)
-
-### RetroBSD
-RetroBSD is a port of 2.11BSD Unix intended for embedded systems with fixed memory mapping. The current target is Microchip PIC32 microcontroller with 128 kbytes of RAM and 512 kbytes of Flash. PIC32 processor has MIPS M4K architecture, executable data memory, and flexible RAM partitioning between user and kernel modes.
-
-* [official site](https://retrobsd.org/)
-* [download](https://retrobsd.org/wiki/autobuild.php)
-
-### SmallWall
-A long time ago, a very smart guy asked a very simple question. "Why do firewalls have to be big, slow, and hard to configure?" And he created m0n0wall. At this, it was amazingly successful. So successful that the FreeBSD-based core was used as a basis for several other projects such as pfSense, Askozia, FreeNAS, and nas4free. Recently, a grandchild of m0n0wall was spawned from pfSense, OPNsense. But, m0n0wall has retired now, and some of us still feel the need for a small and lean firewall. SmallWall is that firewall.
-
-* [official site](https://www.smallwall.org/)
-* [downloads](https://www.smallwall.org/download.html)
-* [forums](https://smallwall.freeforums.net/)
-
-### t1n1wall
-As m0n0wall decided to close its doors, and no further development is planned, people have created this fork.
-
-* [official site](https://t1n1wall.com/)
-* [downloads](https://sourceforge.net/projects/t1n1wall/files/)
-* [forums](https://forums.t1n1wall.com/)
-
-### ZRouter
-ZRouter.org is a FreeBSD-based firmware for embedded devices.
-
-* [official site](https://zrouter.org/)
-* [files](https://zrouter.org/projects/zrouter/files)
-
-## BSD news
-
-News and podcasts covering BSD.
-
-### News sites
-
-* [#BSDHistory](https://bsdhistory.discoverbsd.com/) – tweet-sized facts about BSDs
-* [BSDSec.net](https://bsdsec.net/) – dead simple BSD Security Advisories and Announcements
-* [BSD Weekly](https://bsdweekly.com/) – a free, once–weekly e-mail round-up of BSD news and articles.
-* [DiscoverBSD.com](https://www.discoverbsd.com/) – discovering the Way of the BSD
-* [Klara Systems Articles](https://klarasystems.com/articles/) – technical articles on FreeBSD, OpenZFS, and infrastructure topics
-* [Slashdot](https://bsd.slashdot.org/) – BSD section of the popular Slashdot open-source news and forum site.
-
-### Podcasts
-
-* [BSDNow](https://www.bsdnow.tv/) – weekly BSD podcast, featuring news, interviews, and tutorials, in MP3, OGG, and MP4
-* [BSDTalk](https://bsdtalk.blogspot.com/) – talking about the BSD family of free operating systems
-* [2.5 Admins](https://2.5admins.com/) – systems administration podcast with regular BSD and storage coverage
-* [Garbage (archive)](https://garbage.jcs.org/) – a podcast about technology, much of it garbage (archived episodes).
-
-## Forums and communities
-
-### Community initiatives
-
-* [dmesgd](https://dmesgd.nycbug.org/) – a user-submitted repository of searchable \*BSD dmesgs, maintained by NYC\*BUG
-* [FreeBSD Foundation](https://freebsdfoundation.org/) – non-profit organization supporting FreeBSD development, advocacy, and education
-* [NetBSD Foundation](https://www.netbsd.org/foundation/) – legal entity supporting NetBSD infrastructure, donations, and project governance
-* [OpenBSD Foundation](https://www.openbsdfoundation.org/) – Canadian not-for-profit corporation supporting OpenBSD and related projects
-
-### Forums
-
-* [BSD Cafe Billboard](https://billboard.bsd.cafe/)
-* [BSDForen](https://www.bsdforen.de/)
-* [UnitedBSD](https://www.unitedbsd.com/)
-* [UNIX/BSD – Unix Linux Community](https://community.unix.com/c/unix/bsd/34)
-
-### Meetups
-
-* [All BSD related meetups](https://www.meetup.com/topics/bsd/all)
-
-### Reddit
-
-* [/r/bsd](https://www.reddit.com/r/bsd)
-* [/r/bsdsec](https://www.reddit.com/r/bsdsec)
-* [/r/unixporn](https://www.reddit.com/r/unixporn)
-
-### Fediverse
-
-* [BSD Cafe](https://bsd.cafe)
-* [BSD Network](https://bsd.network/about)
-* [c/bsd](https://lemmy.ml/c/bsd)
-* [c/freebsd](https://lemmy.ml/c/freebsd)
-
-### User groups
-
-* [BSD-PL](https://bsd-pl.org/en) – Polish BSD User Group
-* [HELBUG](http://helbug.fi/) – Helsinki area BSD User Group
-* [FreeBSD Groups](https://www.freebsd.org/usergroups.html)
-* [MetaBUG](https://www.metabug.org/) – a global BSD users group federation
-* [NetBSD Groups](https://www.netbsd.org/community/groups.html)
-* [New York City \*BSD User Group](https://nycbug.org/)
-* [New Delhi BSD User Group](https://ndbug.in/)
-* [OpenBSD user groups](https://www.openbsd.org/groups.html)
-* [Southeast Michigan BSD User Group](http://www.semibug.org/)
-
-## Learning
-
-* [TeachBSD](https://teachbsd.org/) – Teaching Operating Systems with Tracing: a set of courses for students and software practitioners.
-* [FreeBSD Documentation Portal](https://docs.freebsd.org/) – central documentation hub for FreeBSD handbooks, articles, and manuals
-* [FreeBSD Manual Pages](https://man.freebsd.org/) – searchable FreeBSD manual pages
-* [OpenBSD FAQ](https://www.openbsd.org/faq/index.html) – canonical OpenBSD guide covering installation, configuration, and daily administration
-* [OpenBSD Manual Pages](https://man.openbsd.org/) – searchable OpenBSD manual pages
-* [NetBSD Wiki](https://wiki.netbsd.org/) – community-maintained NetBSD knowledge base with practical guides and project documentation
-* [NetBSD Manual Pages](https://man.netbsd.org/) – searchable NetBSD manual pages
-
-## Books
-
-* [Absolute FreeBSD 3rd Ed](https://mwl.io/nonfiction/os#af3e)
-* [Absolute OpenBSD](https://www.michaelwlucas.com/os/ao2e)
-* [Designing BSD Rootkits: An Introduction to Kernel Hacking](https://www.nostarch.com/rootkits.htm)
-* [FreeBSD Device Drivers](https://www.nostarch.com/bsddrivers.htm)
-* [FreeBSD Mastery: Specialty Filesystems](https://www.michaelwlucas.com/os/fmsf)
-* [FreeBSD Mastery: Storage Essentials](https://www.michaelwlucas.com/os/fmse)
-* [FreeBSD Mastery: ZFS](https://www.michaelwlucas.com/os/fmzfs)
-* [FreeBSD Mastery: Advanced ZFS](https://www.michaelwlucas.com/os/fmaz)
-* [The Design and Implementation of the FreeBSD Operating System 2nd Ed](https://www.amazon.com/Design-Implementation-FreeBSD-Operating-System/dp/0321968972/ref=pd_sbs_14_t_0?_encoding=UTF8&psc=1&refRID=W4TYR1MZ2QQR50RECWXQ)
-
-## BSD related software
-
-* [Bastille](https://bastillebsd.org/) – Bastille helps you quickly create and manage FreeBSD Jails
-* [CBSD](https://cbsd.io/) – CBSD is a management layer written for the FreeBSD jail(8) subsystem, bhyve and Xen
-* [BSD-Cloud-Image](https://bsd-cloud-image.org/) – a collection of (unofficial) prebuilt BSD cloud images, for instance for OpenStack
-* [FreshPorts](https://www.freshports.org/) – searchable index of FreeBSD ports, commits, dependencies, and package metadata
-* [HAMMER2](https://www.dragonflybsd.org/hammer/) – DragonFly BSD's default copy-on-write filesystem, with snapshots, compression, deduplication, and checksumming
-* [iocage](https://github.com/freebsd/iocage) – FreeBSD jail manager focused on simple jail and container management
-* [OpenZFS](https://openzfs.org/) – open-source storage platform used by FreeBSD and other operating systems
-* [pkg](https://github.com/freebsd/pkg) – package management toolchain for FreeBSD and other BSD systems
-* [pkgsrc](https://www.pkgsrc.org/) – cross-platform package management system from NetBSD
-* [pot](https://pot.pizzamig.dev/) – FreeBSD jail management tool for container-style workflows
-* [poudriere](https://github.com/freebsd/poudriere) – bulk package builder and test framework used to build FreeBSD packages in clean jails
-* [Runhyve](https://runhyve.app/) – the virtual machines manager for Bhyve
-* [Sylve](https://github.com/AlchemillaHQ/Sylve) – lightweight GUI for managing Bhyve, Jails, ZFS, networking, and more on FreeBSD
-* [vm-bhyve](https://github.com/freebsd/vm-bhyve/) – shell-based, minimal-dependency management system for FreeBSD bhyve virtual machines
-
-## Gaming
-
-* [linuxulator-steam-utils](https://github.com/shkhln/linuxulator-steam-utils) – a set of workarounds for running the Linux Steam client under the FreeBSD Linux emulation layer
-* [Mizutamari](https://codeberg.org/Alexander88207/Mizutamari) – Wine front-end for FreeBSD
-
-## Other
-
-* [A Repository of Unix History and Evolution](https://www.spinellis.gr/pubs/jrnl/2016-EMPSE-unix-history/html/unix-history.html) - The history and evolution of the Unix operating system from 1972 to 2016 by [Diomidis Spinellis](https://github.com/dspinellis) [PDF](http://www.spinellis.gr/pubs/jrnl/2016-EMPSE-unix-history/html/unix-history.pdf)
-* [Archive OS BSD](https://archiveos.org/bsd/) - Archive of BSD systems
-* [Awesome UNIX](https://github.com/sirredbeard/Awesome-UNIX) - The list is an exploration of the world of UNIX
-* [BSD Distributions Timeline](https://github.com/FabioLolix/BSD-Timeline) - Graph of BSD systems
-* [BSD Family Tree](https://cgit.freebsd.org/src/tree/share/misc/bsd-family-tree) - BSD family tree from freebsd-src
-* [Distrowatch](https://distrowatch.com/search.php?ostype=BSD&category=All&origin=All&basedon=All&notbasedon=None&desktop=All&architecture=All&package=All&rolling=All&isosize=All&netinstall=All&language=All&defaultinit=All&status=All#advanced) - Search on distrowatch.com for all BSD systems
-* [The Unix Tree](https://www.tuhs.org/cgi-bin/utree.pl) – browse the source code and manuals of various old versions of Unix (including BSDs)
-* [Unix History](https://www.levenez.com/unix/) - Simplified diagram of Unix history by Éric Lévénez
-* [Wikipedia](https://en.wikipedia.org/wiki/Comparison_of_BSD_operating_systems) - Comparison of BSD operating systems
-* [Wikipedia](https://en.wikipedia.org/wiki/List_of_BSD_operating_systems) - List of BSD operating systems
+* On riscv64, expect a rougher path than amd64.
+* For Octeon, start with [OpenBSD/octeon](https://www.openbsd.org/octeon.html). [NetBSD/evbmips](https://wiki.netbsd.org/ports/evbmips/) supports some Cavium Octeon designs. FreeBSD MIPS is unsupported as of FreeBSD 14.0.
+
+## Core BSDs
+
+* [FreeBSD](https://www.freebsd.org/) - general-purpose BSD for servers, workstations, networking, storage, jails, bhyve, and ZFS. Links: [download](https://www.freebsd.org/where.html), [handbook](https://docs.freebsd.org/en/books/handbook/), [manual pages](https://man.freebsd.org/), [forums](https://forums.freebsd.org/), [FreshPorts](https://www.freshports.org/).
+* [OpenBSD](https://www.openbsd.org/) - security-focused BSD with strong manual pages, PF, OpenSSH, and a compact base system. Links: [download](https://www.openbsd.org/ftp.html), [FAQ](https://www.openbsd.org/faq/), [manual pages](https://man.openbsd.org/), [platforms](https://www.openbsd.org/plat.html), [OpenBSD Journal](https://undeadly.org/).
+* [NetBSD](https://netbsd.org/) - portable BSD for many CPU families, older systems, embedded boards, and pkgsrc. Links: [download](https://netbsd.org/releases/), [guide](https://netbsd.org/docs/guide/en/), [ports](https://netbsd.org/ports/), [manual pages](https://man.netbsd.org/), [pkgsrc](https://www.pkgsrc.org/).
+* [DragonFly BSD](https://www.dragonflybsd.org/) - x86-64 BSD with a distinct kernel direction and HAMMER2 filesystem. Links: [download](https://www.dragonflybsd.org/download/), [handbook](https://www.dragonflybsd.org/docs/newhandbook/), [HAMMER2](https://www.dragonflybsd.org/hammer/), [Digest](https://www.dragonflydigest.com/).
+
+## Desktop, Appliance, And Specialized Systems
+
+* [GhostBSD](https://www.ghostbsd.org/) - desktop-oriented FreeBSD derivative. Links: [download](https://www.ghostbsd.org/download), [forums](https://forums.ghostbsd.org/).
+* [NomadBSD](https://nomadbsd.org/) - FreeBSD-based live USB desktop and rescue system. Links: [download](https://nomadbsd.org/download.html).
+* [helloSystem](https://hellosystem.github.io/) - FreeBSD-based desktop system with a Mac-like user experience. Links: [releases](https://github.com/helloSystem/ISO/releases), [docs](https://hellosystem.github.io/docs/).
+* [OPNsense](https://opnsense.org/) - FreeBSD-based firewall and routing platform. Links: [download](https://opnsense.org/download/), [forum](https://forum.opnsense.org/).
+* [pfSense](https://www.pfsense.org/) - FreeBSD-based firewall and router distribution. Links: [download](https://www.pfsense.org/download/), [forum](https://forum.pfsense.org/).
+* [BSD Router Project](https://bsdrp.net/) - FreeBSD-based router distribution using FRRouting and BIRD. Links: [downloads](https://bsdrp.net/downloads?DokuWiki=e8a2af21cc91416f910347e472b73841).
+* [HardenedBSD](https://hardenedbsd.org/) - security-enhanced FreeBSD fork. Links: [installers](https://installers.hardenedbsd.org/pub/current/), [wiki](https://github.com/HardenedBSD/hardenedBSD/wiki).
+* [MidnightBSD](https://www.midnightbsd.org/) - desktop-oriented BSD derivative. Links: [download](https://www.midnightbsd.org/download/).
+* [CheriBSD](https://www.cl.cam.ac.uk/research/security/ctsrd/cheri/cheribsd.html) - research FreeBSD adaptation for CHERI architectures. Links: [downloads](https://cheri-dist.cl.cam.ac.uk/), [source](https://github.com/CTSRD-CHERI/cheribsd).
+
+## Embedded, Historical, And Niche
+
+These are not default newcomer starting points.
+
+* [LiteBSD](https://github.com/sergev/LiteBSD/wiki) - 4.4BSD-derived system for PIC32MZ microcontrollers.
+* [RetroBSD](https://retrobsd.org/) - 2.11BSD-derived system for PIC32 microcontrollers.
+* [ZRouter](https://zrouter.org/) - FreeBSD-based firmware project for embedded devices.
+* [OS108](https://os108.org/) - NetBSD-based desktop-oriented project.
+* [SmallWall](https://www.smallwall.org/) - small firewall project descended from the m0n0wall/pfSense ecosystem.
+* [t1n1wall](https://t1n1wall.com/) - m0n0wall-derived firewall project.
+
+## Practical BSD Software
+
+* [Bastille](https://bastillebsd.org/) - FreeBSD jail management.
+* [CBSD](https://cbsd.io/) - FreeBSD jail, bhyve, and Xen management.
+* [iocage](https://github.com/freebsd/iocage) - FreeBSD jail manager.
+* [pot](https://pot.pizzamig.dev/) - FreeBSD jail manager for container-style workflows.
+* [poudriere](https://github.com/freebsd/poudriere) - FreeBSD package build and test system.
+* [pkg](https://github.com/freebsd/pkg) - FreeBSD package manager.
+* [vm-bhyve](https://github.com/freebsd/vm-bhyve/) - bhyve VM manager.
+* [OpenZFS](https://openzfs.org/) - storage platform used by FreeBSD and other systems.
+* [HAMMER2](https://www.dragonflybsd.org/hammer/) - DragonFly BSD copy-on-write filesystem.
+* [BSD-Cloud-Image](https://bsd-cloud-image.org/) - unofficial BSD cloud images.
+* [linuxulator-steam-utils](https://github.com/shkhln/linuxulator-steam-utils) - Steam client helpers for FreeBSD Linux emulation.
+
+## News, Community, And Learning
+
+* [FreeBSD Foundation](https://freebsdfoundation.org/), [NetBSD Foundation](https://www.netbsd.org/foundation/), [OpenBSD Foundation](https://www.openbsdfoundation.org/) - project support organizations.
+* [FreeBSD Status Reports](https://www.freebsd.org/status/), [NetBSD Blog](https://blog.netbsd.org/), [OpenBSD Errata](https://www.openbsd.org/errata.html) - official project updates.
+* [BSDNow](https://www.bsdnow.tv/), [2.5 Admins](https://2.5admins.com/), [BSDTalk](https://bsdtalk.blogspot.com/) - podcasts.
+* [BSDCan](https://www.bsdcan.org/), [EuroBSDCon](https://www.eurobsdcon.org/), [AsiaBSDCon](https://asiabsdcon.org/) - conferences.
+* [TeachBSD](https://teachbsd.org/) - operating systems teaching material using BSD tracing.
+* [Klara Systems Articles](https://klarasystems.com/articles/) - practical FreeBSD, OpenZFS, and infrastructure articles.
+* [dmesgd](https://dmesgd.nycbug.org/) - searchable user-submitted BSD dmesg database.
+* [BSD Cafe](https://bsd.cafe), [BSD Network](https://bsd.network/about), [/r/bsd](https://www.reddit.com/r/bsd) - community spaces.
+
+## Books And History
+
+* [Absolute FreeBSD](https://mwl.io/nonfiction/os#af3e), [Absolute OpenBSD](https://www.michaelwlucas.com/os/ao2e), and the [FreeBSD Mastery](https://www.michaelwlucas.com/os) books.
+* [The Design and Implementation of the FreeBSD Operating System](https://www.amazon.com/Design-Implementation-FreeBSD-Operating-System/dp/0321968972/).
+* [BSD Family Tree](https://cgit.freebsd.org/src/tree/share/misc/bsd-family-tree), [BSD Distributions Timeline](https://github.com/FabioLolix/BSD-Timeline), [The Unix Tree](https://www.tuhs.org/cgi-bin/utree.pl), and [Unix History](https://www.levenez.com/unix/).
 
 ## Maintenance
 
-This README is the source of truth.
-
-When adding or changing entries:
-
-* Prefer official documentation, project pages, foundations, manpages, and active communities.
-* Describe who the resource is for, not just what it is.
-* Mark inactive, niche, research-focused, or historical entries clearly.
-* Check each added or changed URL with redirects enabled.
-* Keep descriptions short, factual, and non-marketing.
-* If you introduce a status taxonomy, apply it consistently instead of defining labels that only appear in the contribution guidance.
-
-Required check before committing:
-
-```sh
-git diff --check
-```
-
-CI also checks markdown hygiene and links. `llms.txt` is only a short discovery pointer back to this README.
+This README is the source of truth. Prefer official documentation, project pages, foundations, manpages, and active communities. Describe who a resource is for, label niche or historical entries clearly, check changed URLs, keep descriptions factual, and run `git diff --check` before committing.
