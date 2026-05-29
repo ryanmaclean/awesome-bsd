@@ -16,7 +16,7 @@ BSD is a family of Unix-like operating systems descended from the Berkeley Softw
 Pick by platform:
 
 * **amd64 / x86-64:** start with [FreeBSD](#freebsd), [OpenBSD](#openbsd), [NetBSD](#netbsd), or [DragonFly BSD](#dragonfly-bsd). This is the safest default for PCs, servers, and VMs.
-* **i386 / 32-bit x86:** start with [NetBSD](#netbsd) or [OpenBSD](#openbsd) for older PCs. Treat [FreeBSD](#freebsd) i386 as legacy rather than a default new-install choice.
+* **i386 / 32-bit x86:** start with [NetBSD](#netbsd) or [OpenBSD](#openbsd) for older PCs. [FreeBSD](#freebsd) 14.x is the last FreeBSD release line with standalone i386 support; FreeBSD 15.0 and later do not provide i386 install images.
 * **arm64 / aarch64:** start with [FreeBSD](#freebsd), [OpenBSD](#openbsd), or [NetBSD](#netbsd). Check board-specific notes before assuming Wi-Fi, GPU, sleep, or boot support.
 * **riscv64:** start with [FreeBSD](#freebsd), [OpenBSD](#openbsd), or [NetBSD](#netbsd), but expect a more experimental path than amd64.
 * **32-bit ARM boards:** check [NetBSD](#netbsd) first, then [FreeBSD](#freebsd) if the board is explicitly supported.
